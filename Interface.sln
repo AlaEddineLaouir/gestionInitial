@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interface", "Interface\Interface.vbproj", "{E393F17A-6AD4-4F2D-9D16-06B302B44AC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81D89FE5-2A3D-4970-B4B1-B9883A87A7B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Pictures\Icons\business\png\box-2.png = ..\..\..\Pictures\Icons\business\png\box-2.png
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "App2Tut", "..\App2Tut\App2Tut\App2Tut.vbproj", "{6C0506F2-FB4A-4D37-BC00-374831D33B95}"
 EndProject

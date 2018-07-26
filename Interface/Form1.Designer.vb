@@ -25,9 +25,14 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.header = New System.Windows.Forms.Panel()
-        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.SidePanel = New System.Windows.Forms.Panel()
+        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.Stock1 = New [Interface].Stock()
+        Me.Vente1 = New [Interface].Vente()
+        Me.Command1 = New [Interface].Command()
+        Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -35,17 +40,13 @@ Partial Class Form1
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.logo = New System.Windows.Forms.PictureBox()
-        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.Stock1 = New [Interface].Stock()
-        Me.Vente1 = New [Interface].Vente()
-        Me.Command1 = New [Interface].Command()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.header.SuspendLayout()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SidePanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'header
@@ -61,37 +62,34 @@ Partial Class Form1
         Me.header.Size = New System.Drawing.Size(1225, 43)
         Me.header.TabIndex = 3
         '
-        'BunifuImageButton3
+        'BunifuCustomLabel2
         '
-        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
-        Me.BunifuImageButton3.ImageActive = Nothing
-        Me.BunifuImageButton3.Location = New System.Drawing.Point(1169, 0)
-        Me.BunifuImageButton3.Name = "BunifuImageButton3"
-        Me.BunifuImageButton3.Size = New System.Drawing.Size(28, 43)
-        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton3.TabIndex = 2
-        Me.BunifuImageButton3.TabStop = False
-        Me.BunifuImageButton3.Zoom = 10
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.LightGray
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(102, 8)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(119, 30)
+        Me.BunifuCustomLabel2.TabIndex = 5
+        Me.BunifuCustomLabel2.Text = "ETS M . ALI"
         '
-        'BunifuImageButton2
+        'BunifuCustomLabel1
         '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(1197, 0)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(28, 43)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 1
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.LightGray
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(268, 13)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(301, 17)
+        Me.BunifuCustomLabel1.TabIndex = 4
+        Me.BunifuCustomLabel1.Text = "Aménagement -- Automatisme -- Inox General  "
+        Me.BunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'SidePanel
         '
         Me.SidePanel.BackColor = System.Drawing.Color.White
+        Me.SidePanel.Controls.Add(Me.BunifuFlatButton7)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton6)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton5)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton4)
@@ -104,6 +102,75 @@ Partial Class Form1
         Me.SidePanel.Size = New System.Drawing.Size(232, 589)
         Me.SidePanel.TabIndex = 6
         '
+        'BunifuDragControl2
+        '
+        Me.BunifuDragControl2.Fixed = True
+        Me.BunifuDragControl2.Horizontal = True
+        Me.BunifuDragControl2.TargetControl = Me.header
+        Me.BunifuDragControl2.Vertical = True
+        '
+        'Stock1
+        '
+        Me.Stock1.AutoSize = True
+        Me.Stock1.BackColor = System.Drawing.Color.White
+        Me.Stock1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Stock1.Location = New System.Drawing.Point(232, 43)
+        Me.Stock1.Name = "Stock1"
+        Me.Stock1.Size = New System.Drawing.Size(993, 589)
+        Me.Stock1.TabIndex = 0
+        '
+        'Vente1
+        '
+        Me.Vente1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Vente1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Vente1.Location = New System.Drawing.Point(232, 43)
+        Me.Vente1.Name = "Vente1"
+        Me.Vente1.Size = New System.Drawing.Size(993, 589)
+        Me.Vente1.TabIndex = 1
+        '
+        'Command1
+        '
+        Me.Command1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Command1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Command1.Location = New System.Drawing.Point(232, 43)
+        Me.Command1.Name = "Command1"
+        Me.Command1.Size = New System.Drawing.Size(993, 589)
+        Me.Command1.TabIndex = 2
+        '
+        'BunifuFlatButton7
+        '
+        Me.BunifuFlatButton7.Activecolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuFlatButton7.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton7.BorderRadius = 0
+        Me.BunifuFlatButton7.ButtonText = "Apro"
+        Me.BunifuFlatButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton7.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton7.Iconimage = Global.[Interface].My.Resources.Resources.bag_5
+        Me.BunifuFlatButton7.Iconimage_right = Nothing
+        Me.BunifuFlatButton7.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton7.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton7.IconMarginLeft = 0
+        Me.BunifuFlatButton7.IconMarginRight = 0
+        Me.BunifuFlatButton7.IconRightVisible = True
+        Me.BunifuFlatButton7.IconRightZoom = 0R
+        Me.BunifuFlatButton7.IconVisible = True
+        Me.BunifuFlatButton7.IconZoom = 50.0R
+        Me.BunifuFlatButton7.IsTab = False
+        Me.BunifuFlatButton7.Location = New System.Drawing.Point(1, 270)
+        Me.BunifuFlatButton7.Name = "BunifuFlatButton7"
+        Me.BunifuFlatButton7.Normalcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton7.OnHovercolor = System.Drawing.Color.White
+        Me.BunifuFlatButton7.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.BunifuFlatButton7.selected = False
+        Me.BunifuFlatButton7.Size = New System.Drawing.Size(229, 48)
+        Me.BunifuFlatButton7.TabIndex = 7
+        Me.BunifuFlatButton7.Text = "Apro"
+        Me.BunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton7.Textcolor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton7.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'BunifuFlatButton6
         '
         Me.BunifuFlatButton6.Activecolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -114,7 +181,7 @@ Partial Class Form1
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton6.Iconimage = CType(resources.GetObject("BunifuFlatButton6.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton6.Iconimage = Global.[Interface].My.Resources.Resources.worker
         Me.BunifuFlatButton6.Iconimage_right = Nothing
         Me.BunifuFlatButton6.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton6.Iconimage_Selected = Nothing
@@ -125,7 +192,7 @@ Partial Class Form1
         Me.BunifuFlatButton6.IconVisible = True
         Me.BunifuFlatButton6.IconZoom = 50.0R
         Me.BunifuFlatButton6.IsTab = False
-        Me.BunifuFlatButton6.Location = New System.Drawing.Point(1, 270)
+        Me.BunifuFlatButton6.Location = New System.Drawing.Point(1, 324)
         Me.BunifuFlatButton6.Name = "BunifuFlatButton6"
         Me.BunifuFlatButton6.Normalcolor = System.Drawing.Color.White
         Me.BunifuFlatButton6.OnHovercolor = System.Drawing.Color.White
@@ -148,7 +215,7 @@ Partial Class Form1
         Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton5.Iconimage = CType(resources.GetObject("BunifuFlatButton5.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton5.Iconimage = Global.[Interface].My.Resources.Resources.man
         Me.BunifuFlatButton5.Iconimage_right = Nothing
         Me.BunifuFlatButton5.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton5.Iconimage_Selected = Nothing
@@ -175,14 +242,14 @@ Partial Class Form1
         'BunifuFlatButton4
         '
         Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.White
         Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton4.BorderRadius = 0
         Me.BunifuFlatButton4.ButtonText = "Stock"
         Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton4.Iconimage = CType(resources.GetObject("BunifuFlatButton4.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton4.Iconimage = Global.[Interface].My.Resources.Resources.box_2
         Me.BunifuFlatButton4.Iconimage_right = Nothing
         Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton4.Iconimage_Selected = Nothing
@@ -216,7 +283,7 @@ Partial Class Form1
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton3.Iconimage = CType(resources.GetObject("BunifuFlatButton3.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton3.Iconimage = Global.[Interface].My.Resources.Resources.delivery_cart
         Me.BunifuFlatButton3.Iconimage_right = Nothing
         Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton3.Iconimage_Selected = Nothing
@@ -250,7 +317,7 @@ Partial Class Form1
         Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton2.Iconimage = Global.[Interface].My.Resources.Resources.cart_12
         Me.BunifuFlatButton2.Iconimage_right = Nothing
         Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton2.Iconimage_Selected = Nothing
@@ -284,7 +351,7 @@ Partial Class Form1
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton1.Iconimage = Global.[Interface].My.Resources.Resources.cashier
         Me.BunifuFlatButton1.Iconimage_right = Nothing
         Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton1.Iconimage_Selected = Nothing
@@ -318,64 +385,33 @@ Partial Class Form1
         Me.logo.TabIndex = 2
         Me.logo.TabStop = False
         '
-        'BunifuDragControl2
+        'BunifuImageButton3
         '
-        Me.BunifuDragControl2.Fixed = True
-        Me.BunifuDragControl2.Horizontal = True
-        Me.BunifuDragControl2.TargetControl = Me.header
-        Me.BunifuDragControl2.Vertical = True
+        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton3.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
+        Me.BunifuImageButton3.ImageActive = Nothing
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(1169, 0)
+        Me.BunifuImageButton3.Name = "BunifuImageButton3"
+        Me.BunifuImageButton3.Size = New System.Drawing.Size(28, 43)
+        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton3.TabIndex = 2
+        Me.BunifuImageButton3.TabStop = False
+        Me.BunifuImageButton3.Zoom = 10
         '
-        'BunifuCustomLabel1
+        'BunifuImageButton2
         '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.LightGray
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(268, 13)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(301, 17)
-        Me.BunifuCustomLabel1.TabIndex = 4
-        Me.BunifuCustomLabel1.Text = "Aménagement -- Automatisme -- Inox General  "
-        Me.BunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.LightGray
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(102, 8)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(119, 30)
-        Me.BunifuCustomLabel2.TabIndex = 5
-        Me.BunifuCustomLabel2.Text = "ETS M . ALI"
-        '
-        'Stock1
-        '
-        Me.Stock1.AutoSize = True
-        Me.Stock1.BackColor = System.Drawing.Color.White
-        Me.Stock1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Stock1.Location = New System.Drawing.Point(232, 43)
-        Me.Stock1.Name = "Stock1"
-        Me.Stock1.Size = New System.Drawing.Size(993, 589)
-        Me.Stock1.TabIndex = 7
-        '
-        'Vente1
-        '
-        Me.Vente1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Vente1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Vente1.Location = New System.Drawing.Point(232, 43)
-        Me.Vente1.Name = "Vente1"
-        Me.Vente1.Size = New System.Drawing.Size(993, 589)
-        Me.Vente1.TabIndex = 0
-        '
-        'Command1
-        '
-        Me.Command1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Command1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Command1.Location = New System.Drawing.Point(232, 43)
-        Me.Command1.Name = "Command1"
-        Me.Command1.Size = New System.Drawing.Size(993, 589)
-        Me.Command1.TabIndex = 1
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(1197, 0)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(28, 43)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 1
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
         '
         'Form1
         '
@@ -393,12 +429,13 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.header.ResumeLayout(False)
         Me.header.PerformLayout()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SidePanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -418,6 +455,7 @@ Partial Class Form1
     Friend WithEvents BunifuDragControl2 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuFlatButton7 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Command1 As Object
     Friend WithEvents Vente1 As Object
     Friend WithEvents Stock1 As Object

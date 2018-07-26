@@ -54,7 +54,7 @@ Partial Class Stock
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1010, 64)
+        Me.Panel1.Size = New System.Drawing.Size(1056, 73)
         Me.Panel1.TabIndex = 0
         '
         'BunifuThinButton21
@@ -68,6 +68,7 @@ Partial Class Stock
         Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
         Me.BunifuThinButton21.ButtonText = "Ajouter Produit"
         Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right
         Me.BunifuThinButton21.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuThinButton21.IdleBorderThickness = 2
@@ -75,10 +76,10 @@ Partial Class Stock
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(810, 15)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(875, 0)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
-        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 42)
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 73)
         Me.BunifuThinButton21.TabIndex = 3
         Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -196,7 +197,7 @@ Partial Class Stock
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(338, 79)
+        Me.PictureBox1.Location = New System.Drawing.Point(374, 79)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(25, 44)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -213,7 +214,7 @@ Partial Class Stock
         Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(382, 79)
+        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(453, 79)
         Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
         Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(324, 44)
@@ -248,7 +249,7 @@ Partial Class Stock
         Me.GridProduit.Name = "GridProduit"
         Me.GridProduit.ReadOnly = True
         Me.GridProduit.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.GridProduit.Size = New System.Drawing.Size(703, 389)
+        Me.GridProduit.Size = New System.Drawing.Size(719, 404)
         Me.GridProduit.TabIndex = 10
         '
         'id
@@ -274,7 +275,7 @@ Partial Class Stock
         Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
         Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
         Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(873, 165)
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(979, 182)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
         Me.BunifuImageButton2.Size = New System.Drawing.Size(71, 71)
         Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -294,7 +295,7 @@ Partial Class Stock
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Stock"
-        Me.Size = New System.Drawing.Size(1010, 541)
+        Me.Size = New System.Drawing.Size(1056, 556)
         Me.Panel1.ResumeLayout(False)
         CType(Me.slider, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

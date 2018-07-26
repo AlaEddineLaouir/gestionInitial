@@ -169,5 +169,29 @@
       <DependentUpon>vb_testDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag-5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
