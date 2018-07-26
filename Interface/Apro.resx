@@ -117,41 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="box-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\box-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="028-cancel-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="028-cancel-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="box-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\box-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bag-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bag-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="032-check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\032-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cart-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cart-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delivery-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delivery-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="worker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\worker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="028-cancel-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="BunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="TotalPrix.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Fournisseur.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DateArrivague.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Nombreproduit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMqSURBVHhe7d2/S1VhHMfx/o6mmrqTuajLxeXScmkRhARB
+        ITAICiSEkIaioQiKBqFBaCiCEEEiiAhCxKFoUByKBnWpFnW6Tnd74vO95zmcvD+4S/ee58v7BQ/qOcc7
+        vc/Dc547nHMBcIao4Q5Rwx2ihjtEDXeIGu70HfX+wWH48vVbWFvfCE+frzAYAxuv37y19r7/+JnV2FvP
+        qBuNU/vQyVo9nL9QYTCGPkbHquHuvQc2yXbTNerNrW37gPhhlZHxMD0zF27evtN2JzEY/3MsLi1bexPV
+        Wt7jxUuXbdXQSVvUmp31IfGfr05dCx8/fc7OAsOlJcjs/ELep34/Oj7Jzra0RR2D1p2w8mI1OwqUi2Zp
+        rR7ixNtsNrMzZ6LWkiMG3e+iHBgWzdBxiaxlSpRHrWVHvIAZGqkoTsQ7u3t2LI/60ZNn+VQOpES7IcV2
+        86jjk6X2A4GUaD2tmVr9akliUWv9rANafgAp0lazGn73/kMram3Z6cD1G7fsAiA1elBUw3oetKhXX76y
+        A1qbACnSV+lqWHFb1LHy4rYIkJJiw0QNF4ga7hA13CFquEPUcIeo4Q5Rwx2ihjtEDXeIGu4QNdwharhD
+        1HCHqOEOUcMdooY7RA13iBruEDXcIWq4Q9Rwh6jhDlHDHaKGO0QNd4ga7hA13CFquEPUcIeo4Q5Rwx2i
+        hjtEDXeIGu4QNdwharhD1HCnLWq9e04H7j98bBcAqYmvTcyj1ltCdWBxadkuAFITJ+Y8ar2PXAeu1Kfs
+        AiA18aX7a+sbraiLLyz/9fuPXQSkZKJas371nn2LWuILy3mVM1Kj2VntKmzJo97Z3bMTGlqOACnQyqIy
+        Mm7d6v3kkkctcVtkdKwaGo3T7ChQXtMzc9bs7PxCduRM1Fpb62FRF03W6jZ7A2V0dHxiIcdJWH9H/0Qt
+        +weHFrQu1tBWCVAm2oKOSw793Nzazs60tEUtWnpozzqGrTtBf2t5okW5fjIYgxpqTpOrvhwsTriaqYsz
+        dNQx6kh3QNwqYTDKMjQ76xvEbnpGHWnvT3dKp7uIwRjk6Oc5r6+ogZQQNdwharhD1HCHqOFMCH8BtiBq
+        xHiwuDAAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

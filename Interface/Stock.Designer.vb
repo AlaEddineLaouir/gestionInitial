@@ -25,37 +25,105 @@ Partial Class Stock
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Stock))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.slider = New System.Windows.Forms.PictureBox()
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.slider = New System.Windows.Forms.PictureBox()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GridProduit = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.Panel1.SuspendLayout()
+        Me.TotalPrix = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fournisseur = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateArrivague = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantite = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombreproduit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.slider, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'BunifuFlatButton2
         '
-        Me.Panel1.Controls.Add(Me.BunifuThinButton21)
-        Me.Panel1.Controls.Add(Me.slider)
-        Me.Panel1.Controls.Add(Me.BunifuFlatButton3)
-        Me.Panel1.Controls.Add(Me.BunifuFlatButton2)
-        Me.Panel1.Controls.Add(Me.BunifuFlatButton1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1056, 73)
-        Me.Panel1.TabIndex = 0
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "Accesoires Inox"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 90.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(227, 18)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(178, 25)
+        Me.BunifuFlatButton2.TabIndex = 1
+        Me.BunifuFlatButton2.Text = "Accesoires Inox"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton3
+        '
+        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton3.BorderRadius = 0
+        Me.BunifuFlatButton3.ButtonText = "Accesoires Rideaux"
+        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton3.Iconimage = Nothing
+        Me.BunifuFlatButton3.Iconimage_right = Nothing
+        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton3.IconMarginLeft = 0
+        Me.BunifuFlatButton3.IconMarginRight = 0
+        Me.BunifuFlatButton3.IconRightVisible = True
+        Me.BunifuFlatButton3.IconRightZoom = 0R
+        Me.BunifuFlatButton3.IconVisible = True
+        Me.BunifuFlatButton3.IconZoom = 90.0R
+        Me.BunifuFlatButton3.IsTab = False
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(7, 18)
+        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
+        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.BunifuFlatButton3.selected = False
+        Me.BunifuFlatButton3.Size = New System.Drawing.Size(178, 25)
+        Me.BunifuFlatButton3.TabIndex = 2
+        Me.BunifuFlatButton3.Text = "Accesoires Rideaux"
+        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'slider
+        '
+        Me.slider.BackColor = System.Drawing.SystemColors.Highlight
+        Me.slider.Location = New System.Drawing.Point(7, 56)
+        Me.slider.Name = "slider"
+        Me.slider.Size = New System.Drawing.Size(166, 3)
+        Me.slider.TabIndex = 1
+        Me.slider.TabStop = False
         '
         'BunifuThinButton21
         '
@@ -83,127 +151,6 @@ Partial Class Stock
         Me.BunifuThinButton21.TabIndex = 3
         Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'slider
-        '
-        Me.slider.BackColor = System.Drawing.SystemColors.Highlight
-        Me.slider.Location = New System.Drawing.Point(24, 60)
-        Me.slider.Name = "slider"
-        Me.slider.Size = New System.Drawing.Size(166, 3)
-        Me.slider.TabIndex = 1
-        Me.slider.TabStop = False
-        '
-        'BunifuFlatButton3
-        '
-        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "Accesoires Rideaux"
-        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton3.Iconimage = Nothing
-        Me.BunifuFlatButton3.Iconimage_right = Nothing
-        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton3.IconMarginLeft = 0
-        Me.BunifuFlatButton3.IconMarginRight = 0
-        Me.BunifuFlatButton3.IconRightVisible = True
-        Me.BunifuFlatButton3.IconRightZoom = 0R
-        Me.BunifuFlatButton3.IconVisible = True
-        Me.BunifuFlatButton3.IconZoom = 90.0R
-        Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(233, 22)
-        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
-        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.SystemColors.Highlight
-        Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(178, 25)
-        Me.BunifuFlatButton3.TabIndex = 2
-        Me.BunifuFlatButton3.Text = "Accesoires Rideaux"
-        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuFlatButton2
-        '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "Accesoires Inox"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = Nothing
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 90.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(453, 22)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.SystemColors.Highlight
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(178, 25)
-        Me.BunifuFlatButton2.TabIndex = 1
-        Me.BunifuFlatButton2.Text = "Accesoires Inox"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'BunifuFlatButton1
-        '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Tout Les Produits"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = Nothing
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(24, 22)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.SystemColors.Highlight
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(178, 25)
-        Me.BunifuFlatButton1.TabIndex = 0
-        Me.BunifuFlatButton1.Text = "Tout Les Produits"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(374, 79)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(25, 44)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'BunifuMetroTextbox1
         '
         Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
@@ -214,12 +161,36 @@ Partial Class Stock
         Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(453, 79)
+        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(458, 15)
         Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
         Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(324, 44)
         Me.BunifuMetroTextbox1.TabIndex = 2
         Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(426, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 44)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.Panel1.Controls.Add(Me.BunifuThinButton21)
+        Me.Panel1.Controls.Add(Me.slider)
+        Me.Panel1.Controls.Add(Me.BunifuFlatButton3)
+        Me.Panel1.Controls.Add(Me.BunifuFlatButton2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1056, 73)
+        Me.Panel1.TabIndex = 0
         '
         'GridProduit
         '
@@ -239,49 +210,78 @@ Partial Class Stock
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.nom})
+        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.Fournisseur, Me.DateArrivague, Me.Quantite, Me.Nombreproduit})
+        Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridProduit.DoubleBuffered = True
         Me.GridProduit.EnableHeadersVisualStyles = False
         Me.GridProduit.GridColor = System.Drawing.SystemColors.Highlight
         Me.GridProduit.HeaderBgColor = System.Drawing.SystemColors.Highlight
         Me.GridProduit.HeaderForeColor = System.Drawing.Color.White
-        Me.GridProduit.Location = New System.Drawing.Point(58, 149)
+        Me.GridProduit.Location = New System.Drawing.Point(0, 73)
         Me.GridProduit.Name = "GridProduit"
         Me.GridProduit.ReadOnly = True
         Me.GridProduit.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.GridProduit.Size = New System.Drawing.Size(719, 404)
-        Me.GridProduit.TabIndex = 10
+        Me.GridProduit.Size = New System.Drawing.Size(1056, 483)
+        Me.GridProduit.TabIndex = 13
         '
-        'id
+        'TotalPrix
         '
-        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.id.DataPropertyName = "id"
-        Me.id.DividerWidth = 5
-        Me.id.HeaderText = "IdProduit"
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
+        Me.TotalPrix.DataPropertyName = "nomoCloture"
+        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle3
+        Me.TotalPrix.DividerWidth = 1
+        Me.TotalPrix.HeaderText = "Code"
+        Me.TotalPrix.MinimumWidth = 100
+        Me.TotalPrix.Name = "TotalPrix"
+        Me.TotalPrix.ReadOnly = True
         '
-        'nom
+        'Fournisseur
         '
-        Me.nom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.nom.DataPropertyName = "nom"
-        Me.nom.DividerWidth = 5
-        Me.nom.HeaderText = "Nom Produit"
-        Me.nom.Name = "nom"
-        Me.nom.ReadOnly = True
+        Me.Fournisseur.DataPropertyName = "nom"
+        DataGridViewCellStyle4.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        Me.Fournisseur.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Fournisseur.HeaderText = "Nom de Produit"
+        Me.Fournisseur.MinimumWidth = 200
+        Me.Fournisseur.Name = "Fournisseur"
+        Me.Fournisseur.ReadOnly = True
+        Me.Fournisseur.Width = 200
         '
-        'BunifuImageButton2
+        'DateArrivague
         '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(979, 182)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(71, 71)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 11
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
+        Me.DateArrivague.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DateArrivague.DataPropertyName = "description"
+        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        Me.DateArrivague.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DateArrivague.HeaderText = "Description"
+        Me.DateArrivague.Name = "DateArrivague"
+        Me.DateArrivague.ReadOnly = True
+        '
+        'Quantite
+        '
+        Me.Quantite.DataPropertyName = "quantite"
+        Me.Quantite.HeaderText = "Quantite"
+        Me.Quantite.MinimumWidth = 100
+        Me.Quantite.Name = "Quantite"
+        Me.Quantite.ReadOnly = True
+        '
+        'Nombreproduit
+        '
+        Me.Nombreproduit.DataPropertyName = "prix"
+        DataGridViewCellStyle6.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Nombreproduit.HeaderText = "Prix Produit"
+        Me.Nombreproduit.MinimumWidth = 100
+        Me.Nombreproduit.Name = "Nombreproduit"
+        Me.Nombreproduit.ReadOnly = True
+        Me.Nombreproduit.Width = 307
         '
         'Stock
         '
@@ -289,32 +289,28 @@ Partial Class Stock
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.BunifuImageButton2)
         Me.Controls.Add(Me.GridProduit)
-        Me.Controls.Add(Me.BunifuMetroTextbox1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Stock"
         Me.Size = New System.Drawing.Size(1056, 556)
-        Me.Panel1.ResumeLayout(False)
         CType(Me.slider, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents slider As PictureBox
     Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents GridProduit As Bunifu.Framework.UI.BunifuCustomDataGrid
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents nom As DataGridViewTextBoxColumn
-    Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents TotalPrix As DataGridViewTextBoxColumn
+    Friend WithEvents Fournisseur As DataGridViewTextBoxColumn
+    Friend WithEvents DateArrivague As DataGridViewTextBoxColumn
+    Friend WithEvents Quantite As DataGridViewTextBoxColumn
+    Friend WithEvents Nombreproduit As DataGridViewTextBoxColumn
 End Class

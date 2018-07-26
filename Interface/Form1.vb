@@ -30,6 +30,7 @@
     End Sub
 
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        Stock1.refresh()
         Stock1.BringtoFront()
         Dim btn As Bunifu.Framework.UI.BunifuFlatButton = CType(sender, Bunifu.Framework.UI.BunifuFlatButton)
         btn.BackColor = Color.LightGray
@@ -37,5 +38,15 @@
 
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs)
         WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub BunifuFlatButton7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
+        Apro1.refresh()
+        Apro1.BringToFront()
+    End Sub
+
+    Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
+        Fournisseur1.refresh()
+        Fournisseur1.BringToFront()
     End Sub
 End Class

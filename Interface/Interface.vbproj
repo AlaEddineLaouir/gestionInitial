@@ -80,6 +80,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajouterProduit.Designer.vb">
+      <DependentUpon>ajouterProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apro.Designer.vb">
+      <DependentUpon>Apro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Command.Designer.vb">
       <DependentUpon>Command.vb</DependentUpon>
     </Compile>
@@ -93,6 +105,13 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fournisseur.Designer.vb">
+      <DependentUpon>Fournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FournisseurBean.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -107,6 +126,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="nouveauApro.Designer.vb">
+      <DependentUpon>nouveauApro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nouveauApro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduitBean.vb" />
+    <Compile Include="profil.Designer.vb">
+      <DependentUpon>profil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profil.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Stock.Designer.vb">
       <DependentUpon>Stock.vb</DependentUpon>
@@ -127,17 +159,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ajouterProduit.resx">
+      <DependentUpon>ajouterProduit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apro.resx">
+      <DependentUpon>Apro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Command.resx">
       <DependentUpon>Command.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur.resx">
+      <DependentUpon>Fournisseur.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nouveauApro.resx">
+      <DependentUpon>nouveauApro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>
@@ -192,6 +239,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bag-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-cancel-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-cancel-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\032-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-cancel-12.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
