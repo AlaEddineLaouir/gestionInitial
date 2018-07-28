@@ -16,7 +16,7 @@ Public Class Stock
 
         Try
             cnx.Open()
-            Dim query As String = "select p.nomoCloture ,p.nom , p.description ,p.prix from produit p "
+            Dim query As String = "select p.nomoCloture ,p.nom , p.description ,p.prix , p.quantite from produit p "
             Dim command As New MySqlCommand(query, cnx)
             sda.SelectCommand = command
             sda.Fill(dbDataSet)

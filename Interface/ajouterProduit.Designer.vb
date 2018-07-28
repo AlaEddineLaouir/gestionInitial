@@ -139,7 +139,7 @@ Partial Class ajouterProduit
         Me.BunifuImageButton1.ImageActive = Nothing
         Me.BunifuImageButton1.Location = New System.Drawing.Point(356, 13)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(25, 30)
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(25, 31)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton1.TabIndex = 1
         Me.BunifuImageButton1.TabStop = False
