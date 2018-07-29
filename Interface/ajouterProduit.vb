@@ -35,7 +35,7 @@ Public Class ajouterProduit
 
                 Try
                     cnx.Open()
-                    Dim query As String = "insert into produit (nom,nomoCloture,description,prix) values ('" + produit.nom +
+                    Dim query As String = "insert into produit (nom,codeP,description,prix) values ('" + produit.nom +
                         "','" + produit.code + "','" + produit.description + "' ,'" + produit.prix.ToString() + "' );"
                     Dim command As New MySqlCommand(query, cnx)
                     reader = command.ExecuteReader

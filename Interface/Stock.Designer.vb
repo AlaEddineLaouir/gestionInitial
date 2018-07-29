@@ -226,7 +226,7 @@ Partial Class Stock
         '
         'TotalPrix
         '
-        Me.TotalPrix.DataPropertyName = "nomoCloture"
+        Me.TotalPrix.DataPropertyName = "codeP"
         DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black

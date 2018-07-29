@@ -23,43 +23,43 @@ Partial Class nouveauApro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(nouveauApro))
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.idFournisseur = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuDatepicker1 = New Bunifu.Framework.UI.BunifuDatepicker()
+        Me.dateApro = New Bunifu.Framework.UI.BunifuDatepicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.prx = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.qt = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.slider = New System.Windows.Forms.PictureBox()
+        Me.cd = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.GridProduit = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.TotalPrix = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quantite = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombreproduit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ttl = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.cd = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.slider = New System.Windows.Forms.PictureBox()
-        Me.qt = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.prx = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.ttl = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.Panel1.SuspendLayout()
+        CType(Me.slider, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.slider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -111,18 +111,18 @@ Partial Class nouveauApro
         Me.BunifuCustomLabel3.TabIndex = 3
         Me.BunifuCustomLabel3.Text = "Date :"
         '
-        'BunifuDatepicker1
+        'dateApro
         '
-        Me.BunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuDatepicker1.BorderRadius = 0
-        Me.BunifuDatepicker1.ForeColor = System.Drawing.Color.White
-        Me.BunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.BunifuDatepicker1.FormatCustom = Nothing
-        Me.BunifuDatepicker1.Location = New System.Drawing.Point(571, 83)
-        Me.BunifuDatepicker1.Name = "BunifuDatepicker1"
-        Me.BunifuDatepicker1.Size = New System.Drawing.Size(303, 36)
-        Me.BunifuDatepicker1.TabIndex = 4
-        Me.BunifuDatepicker1.Value = New Date(2018, 7, 26, 16, 19, 16, 291)
+        Me.dateApro.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.dateApro.BorderRadius = 0
+        Me.dateApro.ForeColor = System.Drawing.Color.White
+        Me.dateApro.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.dateApro.FormatCustom = Nothing
+        Me.dateApro.Location = New System.Drawing.Point(571, 83)
+        Me.dateApro.Name = "dateApro"
+        Me.dateApro.Size = New System.Drawing.Size(303, 36)
+        Me.dateApro.TabIndex = 4
+        Me.dateApro.Value = New Date(2018, 7, 26, 16, 19, 16, 291)
         '
         'Panel1
         '
@@ -137,7 +137,7 @@ Partial Class nouveauApro
         Me.Panel1.Controls.Add(Me.BunifuImageButton3)
         Me.Panel1.Controls.Add(Me.BunifuThinButton21)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Panel1.Controls.Add(Me.BunifuDatepicker1)
+        Me.Panel1.Controls.Add(Me.dateApro)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
         Me.Panel1.Controls.Add(Me.idFournisseur)
@@ -147,137 +147,71 @@ Partial Class nouveauApro
         Me.Panel1.Size = New System.Drawing.Size(897, 214)
         Me.Panel1.TabIndex = 5
         '
-        'GridProduit
+        'prx
         '
-        Me.GridProduit.AllowUserToAddRows = False
-        Me.GridProduit.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.GridProduit.BackgroundColor = System.Drawing.Color.White
-        Me.GridProduit.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.GridProduit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.Quantite, Me.Nombreproduit})
-        Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridProduit.DoubleBuffered = True
-        Me.GridProduit.EnableHeadersVisualStyles = False
-        Me.GridProduit.GridColor = System.Drawing.SystemColors.Highlight
-        Me.GridProduit.HeaderBgColor = System.Drawing.SystemColors.Highlight
-        Me.GridProduit.HeaderForeColor = System.Drawing.Color.White
-        Me.GridProduit.Location = New System.Drawing.Point(2, 216)
-        Me.GridProduit.Name = "GridProduit"
-        Me.GridProduit.ReadOnly = True
-        Me.GridProduit.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.GridProduit.Size = New System.Drawing.Size(897, 274)
-        Me.GridProduit.TabIndex = 15
+        Me.prx.BorderColor = System.Drawing.Color.SeaGreen
+        Me.prx.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.prx.Location = New System.Drawing.Point(458, 176)
+        Me.prx.Name = "prx"
+        Me.prx.Size = New System.Drawing.Size(199, 32)
+        Me.prx.TabIndex = 25
         '
-        'TotalPrix
+        'BunifuCustomLabel7
         '
-        Me.TotalPrix.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.TotalPrix.DataPropertyName = "nomoCloture"
-        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle3
-        Me.TotalPrix.DividerWidth = 1
-        Me.TotalPrix.HeaderText = "Code"
-        Me.TotalPrix.MinimumWidth = 100
-        Me.TotalPrix.Name = "TotalPrix"
-        Me.TotalPrix.ReadOnly = True
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(505, 148)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(103, 25)
+        Me.BunifuCustomLabel7.TabIndex = 24
+        Me.BunifuCustomLabel7.Text = "Prix Unité :"
         '
-        'Quantite
+        'qt
         '
-        Me.Quantite.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Quantite.DataPropertyName = "quantite"
-        Me.Quantite.HeaderText = "Quantite"
-        Me.Quantite.MinimumWidth = 100
-        Me.Quantite.Name = "Quantite"
-        Me.Quantite.ReadOnly = True
+        Me.qt.BorderColor = System.Drawing.Color.SeaGreen
+        Me.qt.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.qt.Location = New System.Drawing.Point(239, 176)
+        Me.qt.Name = "qt"
+        Me.qt.Size = New System.Drawing.Size(199, 32)
+        Me.qt.TabIndex = 23
         '
-        'Nombreproduit
+        'BunifuCustomLabel6
         '
-        Me.Nombreproduit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Nombreproduit.DataPropertyName = "prix"
-        DataGridViewCellStyle4.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
-        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Nombreproduit.HeaderText = "Prix Produit"
-        Me.Nombreproduit.MinimumWidth = 100
-        Me.Nombreproduit.Name = "Nombreproduit"
-        Me.Nombreproduit.ReadOnly = True
+        Me.BunifuCustomLabel6.AutoSize = True
+        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(292, 148)
+        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(94, 25)
+        Me.BunifuCustomLabel6.TabIndex = 22
+        Me.BunifuCustomLabel6.Text = "Quantite :"
         '
-        'Panel2
+        'slider
         '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.BunifuImageButton2)
-        Me.Panel2.Controls.Add(Me.BunifuImageButton1)
-        Me.Panel2.Controls.Add(Me.BunifuCustomLabel4)
-        Me.Panel2.Controls.Add(Me.ttl)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(2, 419)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(897, 71)
-        Me.Panel2.TabIndex = 16
+        Me.slider.BackColor = System.Drawing.SystemColors.Highlight
+        Me.slider.Location = New System.Drawing.Point(0, 132)
+        Me.slider.Name = "slider"
+        Me.slider.Size = New System.Drawing.Size(902, 3)
+        Me.slider.TabIndex = 21
+        Me.slider.TabStop = False
         '
-        'BunifuCustomLabel4
+        'cd
         '
-        Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(27, 24)
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(61, 25)
-        Me.BunifuCustomLabel4.TabIndex = 3
-        Me.BunifuCustomLabel4.Text = "Total :"
+        Me.cd.BorderColor = System.Drawing.Color.SeaGreen
+        Me.cd.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cd.Location = New System.Drawing.Point(20, 176)
+        Me.cd.Name = "cd"
+        Me.cd.Size = New System.Drawing.Size(199, 32)
+        Me.cd.TabIndex = 20
         '
-        'ttl
+        'BunifuCustomLabel5
         '
-        Me.ttl.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ttl.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.ttl.BorderColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.ttl.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ttl.Location = New System.Drawing.Point(123, 21)
-        Me.ttl.Name = "ttl"
-        Me.ttl.ReadOnly = True
-        Me.ttl.Size = New System.Drawing.Size(180, 32)
-        Me.ttl.TabIndex = 4
-        '
-        'BunifuImageButton2
-        '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton2.Image = Global.[Interface].My.Resources.Resources._028_cancel_1
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.InitialImage = Global.[Interface].My.Resources.Resources._032_check
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(786, 12)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(40, 47)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 6
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
-        '
-        'BunifuImageButton1
-        '
-        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuImageButton1.Image = Global.[Interface].My.Resources.Resources._032_check
-        Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.InitialImage = Global.[Interface].My.Resources.Resources._032_check
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(844, 12)
-        Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(45, 47)
-        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton1.TabIndex = 5
-        Me.BunifuImageButton1.TabStop = False
-        Me.BunifuImageButton1.Zoom = 10
+        Me.BunifuCustomLabel5.AutoSize = True
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(46, 148)
+        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(132, 25)
+        Me.BunifuCustomLabel5.TabIndex = 19
+        Me.BunifuCustomLabel5.Text = "Code Produit :"
         '
         'BunifuImageButton3
         '
@@ -318,71 +252,139 @@ Partial Class nouveauApro
         Me.BunifuThinButton21.TabIndex = 5
         Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'cd
+        'GridProduit
         '
-        Me.cd.BorderColor = System.Drawing.Color.SeaGreen
-        Me.cd.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cd.Location = New System.Drawing.Point(20, 176)
-        Me.cd.Name = "cd"
-        Me.cd.Size = New System.Drawing.Size(199, 32)
-        Me.cd.TabIndex = 20
+        Me.GridProduit.AllowUserToAddRows = False
+        Me.GridProduit.AllowUserToDeleteRows = False
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.GridProduit.BackgroundColor = System.Drawing.Color.White
+        Me.GridProduit.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GridProduit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.Quantite, Me.Nombreproduit})
+        Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridProduit.DoubleBuffered = True
+        Me.GridProduit.EnableHeadersVisualStyles = False
+        Me.GridProduit.GridColor = System.Drawing.SystemColors.Highlight
+        Me.GridProduit.HeaderBgColor = System.Drawing.SystemColors.Highlight
+        Me.GridProduit.HeaderForeColor = System.Drawing.Color.White
+        Me.GridProduit.Location = New System.Drawing.Point(2, 216)
+        Me.GridProduit.Name = "GridProduit"
+        Me.GridProduit.ReadOnly = True
+        Me.GridProduit.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.GridProduit.Size = New System.Drawing.Size(897, 274)
+        Me.GridProduit.TabIndex = 15
         '
-        'BunifuCustomLabel5
+        'TotalPrix
         '
-        Me.BunifuCustomLabel5.AutoSize = True
-        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(46, 148)
-        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(132, 25)
-        Me.BunifuCustomLabel5.TabIndex = 19
-        Me.BunifuCustomLabel5.Text = "Code Produit :"
+        Me.TotalPrix.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.TotalPrix.DataPropertyName = "nomoCloture"
+        DataGridViewCellStyle7.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle7
+        Me.TotalPrix.DividerWidth = 1
+        Me.TotalPrix.HeaderText = "Code"
+        Me.TotalPrix.MinimumWidth = 100
+        Me.TotalPrix.Name = "TotalPrix"
+        Me.TotalPrix.ReadOnly = True
         '
-        'slider
+        'Quantite
         '
-        Me.slider.BackColor = System.Drawing.SystemColors.Highlight
-        Me.slider.Location = New System.Drawing.Point(0, 132)
-        Me.slider.Name = "slider"
-        Me.slider.Size = New System.Drawing.Size(902, 3)
-        Me.slider.TabIndex = 21
-        Me.slider.TabStop = False
+        Me.Quantite.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Quantite.DataPropertyName = "quantite"
+        Me.Quantite.HeaderText = "Quantite"
+        Me.Quantite.MinimumWidth = 100
+        Me.Quantite.Name = "Quantite"
+        Me.Quantite.ReadOnly = True
         '
-        'qt
+        'Nombreproduit
         '
-        Me.qt.BorderColor = System.Drawing.Color.SeaGreen
-        Me.qt.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.qt.Location = New System.Drawing.Point(239, 176)
-        Me.qt.Name = "qt"
-        Me.qt.Size = New System.Drawing.Size(199, 32)
-        Me.qt.TabIndex = 23
+        Me.Nombreproduit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Nombreproduit.DataPropertyName = "prix"
+        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
+        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Nombreproduit.HeaderText = "Prix Produit"
+        Me.Nombreproduit.MinimumWidth = 100
+        Me.Nombreproduit.Name = "Nombreproduit"
+        Me.Nombreproduit.ReadOnly = True
         '
-        'BunifuCustomLabel6
+        'Panel2
         '
-        Me.BunifuCustomLabel6.AutoSize = True
-        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(292, 148)
-        Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
-        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(94, 25)
-        Me.BunifuCustomLabel6.TabIndex = 22
-        Me.BunifuCustomLabel6.Text = "Quantite :"
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.BunifuImageButton2)
+        Me.Panel2.Controls.Add(Me.BunifuImageButton1)
+        Me.Panel2.Controls.Add(Me.BunifuCustomLabel4)
+        Me.Panel2.Controls.Add(Me.ttl)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(2, 419)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(897, 71)
+        Me.Panel2.TabIndex = 16
         '
-        'prx
+        'BunifuImageButton2
         '
-        Me.prx.BorderColor = System.Drawing.Color.SeaGreen
-        Me.prx.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.prx.Location = New System.Drawing.Point(458, 176)
-        Me.prx.Name = "prx"
-        Me.prx.Size = New System.Drawing.Size(199, 32)
-        Me.prx.TabIndex = 25
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton2.Image = Global.[Interface].My.Resources.Resources._028_cancel_1
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.InitialImage = Global.[Interface].My.Resources.Resources._032_check
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(786, 12)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(40, 47)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 6
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
         '
-        'BunifuCustomLabel7
+        'BunifuImageButton1
         '
-        Me.BunifuCustomLabel7.AutoSize = True
-        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(505, 148)
-        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
-        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(103, 25)
-        Me.BunifuCustomLabel7.TabIndex = 24
-        Me.BunifuCustomLabel7.Text = "Prix Unité :"
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = Global.[Interface].My.Resources.Resources._032_check
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.InitialImage = Global.[Interface].My.Resources.Resources._032_check
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(844, 12)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(45, 47)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 5
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
+        'BunifuCustomLabel4
+        '
+        Me.BunifuCustomLabel4.AutoSize = True
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(27, 24)
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(61, 25)
+        Me.BunifuCustomLabel4.TabIndex = 3
+        Me.BunifuCustomLabel4.Text = "Total :"
+        '
+        'ttl
+        '
+        Me.ttl.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.ttl.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.ttl.BorderColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ttl.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ttl.ForeColor = System.Drawing.Color.Red
+        Me.ttl.Location = New System.Drawing.Point(123, 21)
+        Me.ttl.Name = "ttl"
+        Me.ttl.ReadOnly = True
+        Me.ttl.Size = New System.Drawing.Size(180, 32)
+        Me.ttl.TabIndex = 4
+        Me.ttl.Text = "0"
         '
         'nouveauApro
         '
@@ -399,13 +401,13 @@ Partial Class nouveauApro
         Me.Text = "Fournisseur :"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.slider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.slider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -414,7 +416,7 @@ Partial Class nouveauApro
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents idFournisseur As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuDatepicker1 As Bunifu.Framework.UI.BunifuDatepicker
+    Friend WithEvents dateApro As Bunifu.Framework.UI.BunifuDatepicker
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents GridProduit As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents Panel1 As Panel
