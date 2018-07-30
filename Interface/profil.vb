@@ -1,14 +1,14 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class profil
-    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs)
         Me.Hide()
     End Sub
 
-    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs)
         Me.Hide()
     End Sub
 
-    Private Sub BunifuThinButton22_Click(sender As Object, e As EventArgs) Handles BunifuThinButton22.Click
+    Private Sub BunifuThinButton22_Click(sender As Object, e As EventArgs)
         Dim four As FournisseurBean = New FournisseurBean
         four.nom = nom.Text
         four.prenom = prenom.Text
@@ -40,5 +40,21 @@ Public Class profil
         End If
 
 
+    End Sub
+
+    Private Sub BunifuImageButton1_Click_1(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        nom.Text = ""
+        prenom.Text = ""
+        telephone.Text = ""
+        adresse.Text = ""
+        Me.Hide()
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_1(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+        nom.Text = ""
+        prenom.Text = ""
+        telephone.Text = ""
+        adresse.Text = ""
+        Me.Hide()
     End Sub
 End Class

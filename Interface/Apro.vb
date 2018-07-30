@@ -12,7 +12,7 @@ Public Class Apro
 
         Try
             cnx.Open()
-            Dim query As String = "select dateArrivague As date ,fournisseur as four , sum(prix * quantite) As total , count(produit) As nombre from apro a , aproproduit ap where a.id=ap.apro group by a.id"
+            Dim query As String = "select dateArrivague As date ,fournisseur as four , sum(prix * quantite) As total , count(produit) As nombre , a.id from apro a , aproproduit ap where a.id=ap.apro group by a.id"
             Dim command As New MySqlCommand(query, cnx)
             sda.SelectCommand = command
             sda.Fill(dbDataSet)
@@ -28,5 +28,24 @@ Public Class Apro
 
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
         nouveauApro.Show()
+    End Sub
+
+    Private Sub GridProduit_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GridProduit.CellContentClick
+
+        Dim indiceApro As Integer = GridProduit.SelectedCells.Item(0).RowIndex
+        Dim idFour As Integer = CInt(GridProduit.Rows(indiceApro).Cells(1).Value)
+        Dim dateApro As String = GridProduit.Rows(indiceApro).Cells(0).Value
+        indiceApro = CInt(GridProduit.Rows(indiceApro).Cells(4).Value)
+
+        detailleApro.idApro = indiceApro
+        detailleApro.idFour = idFour
+        detailleApro.dateAproo = dateApro
+        detailleApro.afficher()
+        detailleApro.Show()
+
+
+
+
+
     End Sub
 End Class

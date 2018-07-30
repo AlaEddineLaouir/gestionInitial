@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ajouterProduit
-    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) 
         Try
             Me.Hide()
         Catch ex As Exception
@@ -8,7 +8,7 @@ Public Class ajouterProduit
         End Try
     End Sub
 
-    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) 
         Try
             Me.Hide()
 
@@ -17,7 +17,7 @@ Public Class ajouterProduit
         End Try
     End Sub
 
-    Private Sub BunifuThinButton22_Click(sender As Object, e As EventArgs) Handles BunifuThinButton22.Click
+    Private Sub BunifuThinButton22_Click(sender As Object, e As EventArgs) 
         Try
             Dim produit As ProduitBean = New ProduitBean()
             produit.code = code.Text
@@ -50,6 +50,28 @@ Public Class ajouterProduit
         Catch ex As Exception
 
         End Try
+
+    End Sub
+
+
+
+    Private Sub BunifuImageButton1_Click_1(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        code.Text = ""
+        desc.Text = ""
+        prix.Text = ""
+        nom.Text = ""
+        Me.Hide()
+    End Sub
+
+    Private Sub BunifuThinButton21_Click_1(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+        code.Text = ""
+        desc.Text = ""
+        prix.Text = ""
+        nom.Text = ""
+        Me.Hide()
+    End Sub
+
+    Private Sub modifieBTN_Click_1(sender As Object, e As EventArgs) Handles modifieBTN.Click
 
     End Sub
 End Class

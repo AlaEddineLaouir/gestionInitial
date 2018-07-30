@@ -38,28 +38,23 @@ Public Class Stock
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
-
-    Private Sub BunifuMetroTextbox1_OnValueChanged(sender As Object, e As EventArgs) Handles BunifuMetroTextbox1.OnValueChanged
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub slider_Click(sender As Object, e As EventArgs) Handles slider.Click
-
-    End Sub
 
     Private Sub GridProduit_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GridProduit.CellContentClick
+        Dim indice As Integer = GridProduit.SelectedCells.Item(0).RowIndex
+        Dim code As String = GridProduit.Rows(indice).Cells(0).Value
+        Dim nomProduit As String = GridProduit.Rows(indice).Cells(1).Value
+        Dim descProduit As String = GridProduit.Rows(indice).Cells(2).Value
+        Dim prixVente As Double = CDbl(GridProduit.Rows(indice).Cells(3).Value)
+
+        ajouterProduit.code.Text = code
+        ajouterProduit.nom.Text = nomProduit
+        ajouterProduit.desc.Text = descProduit
+        ajouterProduit.prix.Text = prixVente
+
         ajouterProduit.Titre.Text = "Modifie Produit"
+        ajouterProduit.confirmeBTN.Visible = False
+        ajouterProduit.modifieBTN.Visible = True
         ajouterProduit.Show()
     End Sub
 End Class
