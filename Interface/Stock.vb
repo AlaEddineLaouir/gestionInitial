@@ -55,6 +55,9 @@ Public Class Stock
         ajouterProduit.Titre.Text = "Modifie Produit"
         ajouterProduit.confirmeBTN.Visible = False
         ajouterProduit.modifieBTN.Visible = True
+
+        ajouterProduit.codeProduit = code
+
         ajouterProduit.Show()
     End Sub
 End Class

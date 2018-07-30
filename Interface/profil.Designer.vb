@@ -27,7 +27,7 @@ Partial Class profil
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.telephone = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuThinButton22 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.ajouter = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.adresse = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.prenom = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -38,6 +38,7 @@ Partial Class profil
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Titre = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.modifier = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -50,8 +51,9 @@ Partial Class profil
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.modifier)
         Me.Panel1.Controls.Add(Me.telephone)
-        Me.Panel1.Controls.Add(Me.BunifuThinButton22)
+        Me.Panel1.Controls.Add(Me.ajouter)
         Me.Panel1.Controls.Add(Me.BunifuThinButton21)
         Me.Panel1.Controls.Add(Me.adresse)
         Me.Panel1.Controls.Add(Me.prenom)
@@ -77,30 +79,30 @@ Partial Class profil
         Me.telephone.Size = New System.Drawing.Size(199, 32)
         Me.telephone.TabIndex = 45
         '
-        'BunifuThinButton22
+        'ajouter
         '
-        Me.BunifuThinButton22.ActiveBorderThickness = 1
-        Me.BunifuThinButton22.ActiveCornerRadius = 20
-        Me.BunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton22.ActiveForecolor = System.Drawing.Color.White
-        Me.BunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton22.BackColor = System.Drawing.Color.White
-        Me.BunifuThinButton22.BackgroundImage = CType(resources.GetObject("BunifuThinButton22.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton22.ButtonText = "Enregistrer"
-        Me.BunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton22.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton22.IdleBorderThickness = 2
-        Me.BunifuThinButton22.IdleCornerRadius = 20
-        Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.White
-        Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton22.Location = New System.Drawing.Point(205, 426)
-        Me.BunifuThinButton22.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton22.Name = "BunifuThinButton22"
-        Me.BunifuThinButton22.Size = New System.Drawing.Size(158, 50)
-        Me.BunifuThinButton22.TabIndex = 48
-        Me.BunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ajouter.ActiveBorderThickness = 1
+        Me.ajouter.ActiveCornerRadius = 20
+        Me.ajouter.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ajouter.ActiveForecolor = System.Drawing.Color.White
+        Me.ajouter.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ajouter.BackColor = System.Drawing.Color.White
+        Me.ajouter.BackgroundImage = CType(resources.GetObject("ajouter.BackgroundImage"), System.Drawing.Image)
+        Me.ajouter.ButtonText = "Enregistrer"
+        Me.ajouter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ajouter.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ajouter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ajouter.IdleBorderThickness = 2
+        Me.ajouter.IdleCornerRadius = 20
+        Me.ajouter.IdleFillColor = System.Drawing.Color.White
+        Me.ajouter.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ajouter.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.ajouter.Location = New System.Drawing.Point(205, 426)
+        Me.ajouter.Margin = New System.Windows.Forms.Padding(5)
+        Me.ajouter.Name = "ajouter"
+        Me.ajouter.Size = New System.Drawing.Size(158, 50)
+        Me.ajouter.TabIndex = 48
+        Me.ajouter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuThinButton21
         '
@@ -218,6 +220,31 @@ Partial Class profil
         Me.Titre.TabIndex = 37
         Me.Titre.Text = "Ajouter Fournisseur"
         '
+        'modifier
+        '
+        Me.modifier.ActiveBorderThickness = 1
+        Me.modifier.ActiveCornerRadius = 20
+        Me.modifier.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.ActiveForecolor = System.Drawing.Color.White
+        Me.modifier.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.BackColor = System.Drawing.Color.White
+        Me.modifier.BackgroundImage = CType(resources.GetObject("modifier.BackgroundImage"), System.Drawing.Image)
+        Me.modifier.ButtonText = "Modifier"
+        Me.modifier.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.modifier.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.modifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.IdleBorderThickness = 2
+        Me.modifier.IdleCornerRadius = 20
+        Me.modifier.IdleFillColor = System.Drawing.Color.White
+        Me.modifier.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.Location = New System.Drawing.Point(227, 426)
+        Me.modifier.Margin = New System.Windows.Forms.Padding(5)
+        Me.modifier.Name = "modifier"
+        Me.modifier.Size = New System.Drawing.Size(158, 50)
+        Me.modifier.TabIndex = 49
+        Me.modifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'profil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -239,7 +266,7 @@ Partial Class profil
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents Panel1 As Panel
     Friend WithEvents telephone As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuThinButton22 As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents ajouter As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents adresse As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents prenom As WindowsFormsControlLibrary1.BunifuCustomTextbox
@@ -250,4 +277,5 @@ Partial Class profil
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents Titre As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents modifier As Bunifu.Framework.UI.BunifuThinButton2
 End Class

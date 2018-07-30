@@ -23,24 +23,24 @@ Partial Class Fournisseur
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fournisseur))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fournisseur))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.GridProduit = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.GridFour = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.TotalPrix = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DateArrivague = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombreproduit = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
-        CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridFour, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -68,15 +68,41 @@ Partial Class Fournisseur
         Me.BunifuCustomLabel1.TabIndex = 13
         Me.BunifuCustomLabel1.Text = "Les Fournisseurs"
         '
-        'GridProduit
+        'BunifuThinButton21
         '
-        Me.GridProduit.AllowUserToAddRows = False
-        Me.GridProduit.AllowUserToDeleteRows = False
+        Me.BunifuThinButton21.ActiveBorderThickness = 1
+        Me.BunifuThinButton21.ActiveCornerRadius = 20
+        Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.BackColor = System.Drawing.Color.White
+        Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuThinButton21.ButtonText = "Nouveau Fournisseur"
+        Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BunifuThinButton21.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.IdleBorderThickness = 2
+        Me.BunifuThinButton21.IdleCornerRadius = 20
+        Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.White
+        Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(998, 0)
+        Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
+        Me.BunifuThinButton21.Name = "BunifuThinButton21"
+        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 73)
+        Me.BunifuThinButton21.TabIndex = 3
+        Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GridFour
+        '
+        Me.GridFour.AllowUserToAddRows = False
+        Me.GridFour.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.GridProduit.BackgroundColor = System.Drawing.Color.White
-        Me.GridProduit.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.GridProduit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.GridFour.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.GridFour.BackgroundColor = System.Drawing.Color.White
+        Me.GridFour.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GridFour.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -84,21 +110,21 @@ Partial Class Fournisseur
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.DataGridViewTextBoxColumn1, Me.DateArrivague, Me.Nombreproduit})
-        Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridProduit.DoubleBuffered = True
-        Me.GridProduit.EnableHeadersVisualStyles = False
-        Me.GridProduit.GridColor = System.Drawing.SystemColors.Highlight
-        Me.GridProduit.HeaderBgColor = System.Drawing.SystemColors.Highlight
-        Me.GridProduit.HeaderForeColor = System.Drawing.Color.White
-        Me.GridProduit.Location = New System.Drawing.Point(0, 73)
-        Me.GridProduit.Name = "GridProduit"
-        Me.GridProduit.ReadOnly = True
-        Me.GridProduit.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.GridProduit.Size = New System.Drawing.Size(1179, 411)
-        Me.GridProduit.TabIndex = 13
+        Me.GridFour.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.GridFour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GridFour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.DataGridViewTextBoxColumn1, Me.DateArrivague, Me.Nombreproduit})
+        Me.GridFour.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridFour.DoubleBuffered = True
+        Me.GridFour.EnableHeadersVisualStyles = False
+        Me.GridFour.GridColor = System.Drawing.SystemColors.Highlight
+        Me.GridFour.HeaderBgColor = System.Drawing.SystemColors.Highlight
+        Me.GridFour.HeaderForeColor = System.Drawing.Color.White
+        Me.GridFour.Location = New System.Drawing.Point(0, 73)
+        Me.GridFour.Name = "GridFour"
+        Me.GridFour.ReadOnly = True
+        Me.GridFour.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.GridFour.Size = New System.Drawing.Size(1179, 411)
+        Me.GridFour.TabIndex = 13
         '
         'TotalPrix
         '
@@ -150,44 +176,18 @@ Partial Class Fournisseur
         Me.Nombreproduit.Name = "Nombreproduit"
         Me.Nombreproduit.ReadOnly = True
         '
-        'BunifuThinButton21
-        '
-        Me.BunifuThinButton21.ActiveBorderThickness = 1
-        Me.BunifuThinButton21.ActiveCornerRadius = 20
-        Me.BunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.ActiveForecolor = System.Drawing.Color.White
-        Me.BunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.BackColor = System.Drawing.Color.White
-        Me.BunifuThinButton21.BackgroundImage = CType(resources.GetObject("BunifuThinButton21.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuThinButton21.ButtonText = "Nouveau Fournisseur"
-        Me.BunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BunifuThinButton21.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.IdleBorderThickness = 2
-        Me.BunifuThinButton21.IdleCornerRadius = 20
-        Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.White
-        Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(998, 0)
-        Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
-        Me.BunifuThinButton21.Name = "BunifuThinButton21"
-        Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 73)
-        Me.BunifuThinButton21.TabIndex = 3
-        Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Fournisseur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.GridProduit)
+        Me.Controls.Add(Me.GridFour)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Fournisseur"
         Me.Size = New System.Drawing.Size(1179, 484)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridFour, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -195,7 +195,7 @@ Partial Class Fournisseur
     Friend WithEvents Panel1 As Panel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuThinButton21 As Bunifu.Framework.UI.BunifuThinButton2
-    Friend WithEvents GridProduit As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents GridFour As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents TotalPrix As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DateArrivague As DataGridViewTextBoxColumn
