@@ -57,6 +57,11 @@ Public Class profil
             Catch ex As Exception
             Finally
                 cnx.Dispose()
+                If (Titre.Text.Equals("Modifier Fournisseur")) Then
+                    Principale.Fournisseur1.refresh()
+                Else
+
+                End If
                 fermer()
             End Try
 
@@ -99,7 +104,7 @@ Public Class profil
             Finally
                 cnx.Dispose()
             End Try
-            Form1.Fournisseur1.refresh()
+            Principale.Fournisseur1.refresh()
             Me.Hide()
         End If
 

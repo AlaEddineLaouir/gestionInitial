@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Principale
 
 
     Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click

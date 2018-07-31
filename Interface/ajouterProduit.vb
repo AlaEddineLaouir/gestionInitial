@@ -48,6 +48,7 @@ Public Class ajouterProduit
                     MessageBox.Show(ex.Message)
                 Finally
                     cnx.Dispose()
+                    Principale.Stock1.refresh()
                     fermer()
                 End Try
 
@@ -104,6 +105,7 @@ Public Class ajouterProduit
                 MessageBox.Show("Verifie les valeurs entrers ")
             Finally
                 cnx.Dispose()
+                Principale.Stock1.refresh()
                 fermer()
             End Try
         End If

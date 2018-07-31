@@ -104,11 +104,11 @@
     <Compile Include="detailleApro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Principale.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Principale.Designer.vb">
+      <DependentUpon>Principale.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fournisseur.Designer.vb">
@@ -177,8 +177,8 @@
     <EmbeddedResource Include="detailleApro.resx">
       <DependentUpon>detailleApro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Principale.resx">
+      <DependentUpon>Principale.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fournisseur.resx">
       <DependentUpon>Fournisseur.vb</DependentUpon>
