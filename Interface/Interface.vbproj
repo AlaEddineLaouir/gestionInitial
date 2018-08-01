@@ -92,6 +92,18 @@
     <Compile Include="Apro.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Caisse.Designer.vb">
+      <DependentUpon>Caisse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caisse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.vb">
+      <DependentUpon>Client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Command.Designer.vb">
       <DependentUpon>Command.vb</DependentUpon>
     </Compile>
@@ -102,6 +114,18 @@
       <DependentUpon>detailleApro.vb</DependentUpon>
     </Compile>
     <Compile Include="detailleApro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="encaissement.Designer.vb">
+      <DependentUpon>encaissement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="encaissement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nouvelleVente.Designer.vb">
+      <DependentUpon>nouvelleVente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nouvelleVente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principale.vb">
@@ -171,11 +195,23 @@
     <EmbeddedResource Include="Apro.resx">
       <DependentUpon>Apro.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Caisse.resx">
+      <DependentUpon>Caisse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Command.resx">
       <DependentUpon>Command.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="detailleApro.resx">
       <DependentUpon>detailleApro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="encaissement.resx">
+      <DependentUpon>encaissement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nouvelleVente.resx">
+      <DependentUpon>nouvelleVente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principale.resx">
       <DependentUpon>Principale.vb</DependentUpon>
@@ -260,6 +296,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\028-cancel-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\036-add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

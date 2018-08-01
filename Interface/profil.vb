@@ -47,7 +47,7 @@ Public Class profil
                             adress= '" + adresse.Text + "' where id=" + idPersonne.ToString() + ""
             Else
                 query = "update client set nom='" + nom.Text + "',prenom='" + prenom.Text + "',telephone='" + telephone.Text + "',
-                            adress='" + adresse.Text + "' where id=" + idPersonne + ""
+                            adress='" + adresse.Text + "' where id=" + idPersonne.ToString + ""
             End If
             Try
                 cnx.Open()
@@ -60,7 +60,7 @@ Public Class profil
                 If (Titre.Text.Equals("Modifier Fournisseur")) Then
                     Principale.Fournisseur1.refresh()
                 Else
-
+                    Principale.Client1.refresh()
                 End If
                 fermer()
             End Try
@@ -105,6 +105,7 @@ Public Class profil
                 cnx.Dispose()
             End Try
             Principale.Fournisseur1.refresh()
+            Principale.Client1.refresh()
             Me.Hide()
         End If
 

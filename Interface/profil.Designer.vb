@@ -26,6 +26,7 @@ Partial Class profil
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(profil))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.modifier = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.telephone = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.ajouter = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
@@ -38,7 +39,6 @@ Partial Class profil
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Titre = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.modifier = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -69,6 +69,31 @@ Partial Class profil
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(389, 500)
         Me.Panel1.TabIndex = 0
+        '
+        'modifier
+        '
+        Me.modifier.ActiveBorderThickness = 1
+        Me.modifier.ActiveCornerRadius = 20
+        Me.modifier.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.ActiveForecolor = System.Drawing.Color.White
+        Me.modifier.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.BackColor = System.Drawing.Color.White
+        Me.modifier.BackgroundImage = CType(resources.GetObject("modifier.BackgroundImage"), System.Drawing.Image)
+        Me.modifier.ButtonText = "Modifier"
+        Me.modifier.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.modifier.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.modifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.IdleBorderThickness = 2
+        Me.modifier.IdleCornerRadius = 20
+        Me.modifier.IdleFillColor = System.Drawing.Color.White
+        Me.modifier.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.modifier.Location = New System.Drawing.Point(205, 426)
+        Me.modifier.Margin = New System.Windows.Forms.Padding(5)
+        Me.modifier.Name = "modifier"
+        Me.modifier.Size = New System.Drawing.Size(158, 50)
+        Me.modifier.TabIndex = 49
+        Me.modifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'telephone
         '
@@ -219,31 +244,6 @@ Partial Class profil
         Me.Titre.Size = New System.Drawing.Size(312, 46)
         Me.Titre.TabIndex = 37
         Me.Titre.Text = "Ajouter Fournisseur"
-        '
-        'modifier
-        '
-        Me.modifier.ActiveBorderThickness = 1
-        Me.modifier.ActiveCornerRadius = 20
-        Me.modifier.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.modifier.ActiveForecolor = System.Drawing.Color.White
-        Me.modifier.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.modifier.BackColor = System.Drawing.Color.White
-        Me.modifier.BackgroundImage = CType(resources.GetObject("modifier.BackgroundImage"), System.Drawing.Image)
-        Me.modifier.ButtonText = "Modifier"
-        Me.modifier.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.modifier.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.modifier.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.modifier.IdleBorderThickness = 2
-        Me.modifier.IdleCornerRadius = 20
-        Me.modifier.IdleFillColor = System.Drawing.Color.White
-        Me.modifier.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.modifier.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.modifier.Location = New System.Drawing.Point(227, 426)
-        Me.modifier.Margin = New System.Windows.Forms.Padding(5)
-        Me.modifier.Name = "modifier"
-        Me.modifier.Size = New System.Drawing.Size(158, 50)
-        Me.modifier.TabIndex = 49
-        Me.modifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'profil
         '

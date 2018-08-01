@@ -1,17 +1,18 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class nouveauApro
-    Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
+
+    Private Sub fermer()
         Me.Hide()
         GridProduit.Rows.Clear()
         ttl.Text = ""
         idFournisseur.Text = ""
     End Sub
+    Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
+        fermer()
+    End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
-        Me.Hide()
-        GridProduit.Rows.Clear()
-        ttl.Text = ""
-        idFournisseur.Text = ""
+        fermer()
     End Sub
 
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
@@ -66,7 +67,11 @@ Public Class nouveauApro
 
         Dim cnx As MySqlConnection = New MySqlConnection
         cnx.ConnectionString = "server=localhost;userid=root;password=admin;database=gestionets"
-        cnx.Open()
+        Try
+            cnx.Open()
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
         Dim sqlTran As MySqlTransaction = cnx.BeginTransaction()
 
         Try
@@ -108,7 +113,7 @@ Public Class nouveauApro
 
 
             sqlTran.Commit()
-            GridProduit.Rows.Clear()
+            fermer()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
             sqlTran.Rollback()
