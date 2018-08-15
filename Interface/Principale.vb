@@ -17,6 +17,7 @@
 
 
     Private Sub BunifuFlatButton2_Click_1(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
+        Vente1.refresh()
         Vente1.BringToFront()
 
     End Sub
@@ -52,7 +53,7 @@
     End Sub
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        Caisse1.refresh()
+        Caisse1.refreshcaisse()
         Caisse1.BringToFront()
     End Sub
 End Class

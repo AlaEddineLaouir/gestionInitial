@@ -477,7 +477,7 @@ Partial Class Principale
         Me.Vente1.Location = New System.Drawing.Point(232, 43)
         Me.Vente1.Name = "Vente1"
         Me.Vente1.Size = New System.Drawing.Size(993, 589)
-        Me.Vente1.TabIndex = 7
+        Me.Vente1.TabIndex = 0
         '
         'Principale
         '

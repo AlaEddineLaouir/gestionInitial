@@ -12,7 +12,7 @@ Public Class Apro
 
         Try
             cnx.Open()
-            Dim query As String = "select dateArrivague As date ,fournisseur as four , sum(prix * quantite) As total , count(produit) As nombre , a.id from apro a , aproproduit ap where a.id=ap.apro group by a.id"
+            Dim query As String = "select dateArrivague As date ,concat(nom,' ',prenom,' ',telephone) as four , sum(prix * quantite) As total , count(produit) As nombre , a.id from apro a , aproproduit ap, fournisseur f where f.id=a.fournisseur and  a.id=ap.apro group by a.id"
             Dim command As New MySqlCommand(query, cnx)
             sda.SelectCommand = command
             sda.Fill(dbDataSet)

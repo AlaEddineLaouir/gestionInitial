@@ -2,7 +2,9 @@
 
 Public Class Caisse
 
-    Public Sub refresh()
+
+
+    Public Sub refreshcaisse()
 
         Dim cnx As MySqlConnection = New MySqlConnection
         cnx.ConnectionString = "server=localhost;userid=root;password=admin;database=gestionets"
@@ -46,5 +48,17 @@ Public Class Caisse
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
         encaissement.action.Text = ("Crediter")
         encaissement.Show()
+    End Sub
+
+    Private Sub Caisse_Load(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub GridCaisse_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub GridProduit_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
     End Sub
 End Class

@@ -23,10 +23,10 @@ Partial Class nouvelleVente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(nouvelleVente))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -34,6 +34,7 @@ Partial Class nouvelleVente
         Me.TotalPrix = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quantite = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombreproduit = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrixDebut = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -58,6 +59,7 @@ Partial Class nouvelleVente
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.idClient = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.tauxRms = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1.SuspendLayout()
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -90,21 +92,21 @@ Partial Class nouvelleVente
         '
         Me.GridProduit.AllowUserToAddRows = False
         Me.GridProduit.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.GridProduit.BackgroundColor = System.Drawing.Color.White
         Me.GridProduit.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GridProduit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.Quantite, Me.Nombreproduit})
+        Me.GridProduit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TotalPrix, Me.Quantite, Me.Nombreproduit, Me.PrixDebut})
         Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridProduit.DoubleBuffered = True
         Me.GridProduit.EnableHeadersVisualStyles = False
@@ -122,10 +124,10 @@ Partial Class nouvelleVente
         '
         Me.TotalPrix.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.TotalPrix.DataPropertyName = "nomoCloture"
-        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle7
         Me.TotalPrix.DividerWidth = 1
         Me.TotalPrix.HeaderText = "Code"
         Me.TotalPrix.MinimumWidth = 100
@@ -145,18 +147,25 @@ Partial Class nouvelleVente
         '
         Me.Nombreproduit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Nombreproduit.DataPropertyName = "prix"
-        DataGridViewCellStyle4.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
-        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
+        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle8
         Me.Nombreproduit.HeaderText = "Prix Produit"
         Me.Nombreproduit.MinimumWidth = 100
         Me.Nombreproduit.Name = "Nombreproduit"
         Me.Nombreproduit.ReadOnly = True
         '
+        'PrixDebut
+        '
+        Me.PrixDebut.HeaderText = "Prix Fixer"
+        Me.PrixDebut.Name = "PrixDebut"
+        Me.PrixDebut.ReadOnly = True
+        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.tauxRms)
         Me.Panel3.Controls.Add(Me.BunifuCustomLabel8)
         Me.Panel3.Controls.Add(Me.BunifuImageButton2)
         Me.Panel3.Controls.Add(Me.BunifuImageButton1)
@@ -452,6 +461,17 @@ Partial Class nouvelleVente
         Me.idClient.Size = New System.Drawing.Size(472, 32)
         Me.idClient.TabIndex = 2
         '
+        'tauxRms
+        '
+        Me.tauxRms.AutoSize = True
+        Me.tauxRms.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tauxRms.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.tauxRms.Location = New System.Drawing.Point(489, 24)
+        Me.tauxRms.Name = "tauxRms"
+        Me.tauxRms.Size = New System.Drawing.Size(38, 25)
+        Me.tauxRms.TabIndex = 9
+        Me.tauxRms.Text = "0%"
+        '
         'nouvelleVente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -508,4 +528,6 @@ Partial Class nouvelleVente
     Friend WithEvents prixVente As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents BunifuCustomLabel9 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuImageButton4 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents PrixDebut As DataGridViewTextBoxColumn
+    Friend WithEvents tauxRms As Bunifu.Framework.UI.BunifuCustomLabel
 End Class
