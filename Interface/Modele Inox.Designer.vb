@@ -23,11 +23,22 @@ Partial Class Modele_Inox
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Modele_Inox))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.NvModeleBTN = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.Milieu = New System.Windows.Forms.Panel()
+        Me.GridModele = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.Num = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.prix = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.imageModele = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel3.SuspendLayout()
+        CType(Me.GridModele, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -77,14 +88,82 @@ Partial Class Modele_Inox
         Me.NvModeleBTN.TabIndex = 3
         Me.NvModeleBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Milieu
+        'GridModele
         '
-        Me.Milieu.AutoScroll = True
-        Me.Milieu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Milieu.Location = New System.Drawing.Point(0, 74)
-        Me.Milieu.Name = "Milieu"
-        Me.Milieu.Size = New System.Drawing.Size(1160, 760)
-        Me.Milieu.TabIndex = 6
+        Me.GridModele.AllowUserToAddRows = False
+        Me.GridModele.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GridModele.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.GridModele.BackgroundColor = System.Drawing.Color.White
+        Me.GridModele.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GridModele.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridModele.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.GridModele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GridModele.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Num, Me.prix, Me.Description, Me.imageModele})
+        Me.GridModele.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridModele.DoubleBuffered = True
+        Me.GridModele.EnableHeadersVisualStyles = False
+        Me.GridModele.GridColor = System.Drawing.SystemColors.Highlight
+        Me.GridModele.HeaderBgColor = System.Drawing.SystemColors.Highlight
+        Me.GridModele.HeaderForeColor = System.Drawing.Color.White
+        Me.GridModele.Location = New System.Drawing.Point(0, 74)
+        Me.GridModele.Name = "GridModele"
+        Me.GridModele.ReadOnly = True
+        Me.GridModele.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.GridModele.Size = New System.Drawing.Size(1160, 760)
+        Me.GridModele.TabIndex = 14
+        '
+        'Num
+        '
+        Me.Num.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Num.DataPropertyName = "id"
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Num.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Num.HeaderText = "Numero"
+        Me.Num.Name = "Num"
+        Me.Num.ReadOnly = True
+        '
+        'prix
+        '
+        Me.prix.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.prix.DataPropertyName = "prix"
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.prix.DefaultCellStyle = DataGridViewCellStyle4
+        Me.prix.HeaderText = "Prix"
+        Me.prix.Name = "prix"
+        Me.prix.ReadOnly = True
+        '
+        'Description
+        '
+        Me.Description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Description.DataPropertyName = "description"
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Description.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Description.HeaderText = "Description"
+        Me.Description.Name = "Description"
+        Me.Description.ReadOnly = True
+        '
+        'imageModele
+        '
+        Me.imageModele.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.imageModele.DataPropertyName = "image"
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.NullValue = CType(resources.GetObject("DataGridViewCellStyle6.NullValue"), Object)
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.imageModele.DefaultCellStyle = DataGridViewCellStyle6
+        Me.imageModele.HeaderText = "Modele"
+        Me.imageModele.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.imageModele.Name = "imageModele"
+        Me.imageModele.ReadOnly = True
+        Me.imageModele.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.imageModele.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Modele_Inox
         '
@@ -92,17 +171,22 @@ Partial Class Modele_Inox
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.Milieu)
+        Me.Controls.Add(Me.GridModele)
         Me.Controls.Add(Me.Panel3)
         Me.Name = "Modele_Inox"
         Me.Size = New System.Drawing.Size(1160, 834)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.GridModele, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents NvModeleBTN As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents Panel3 As Panel
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents Milieu As Panel
+    Friend WithEvents GridModele As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents Num As DataGridViewTextBoxColumn
+    Friend WithEvents prix As DataGridViewTextBoxColumn
+    Friend WithEvents Description As DataGridViewTextBoxColumn
+    Friend WithEvents imageModele As DataGridViewImageColumn
 End Class
