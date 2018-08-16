@@ -24,21 +24,28 @@ Partial Class Caisse
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GridCaisse = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.EtatCaisse = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.dateDeSelection = New Bunifu.Framework.UI.BunifuDatepicker()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Initial = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.dateDeSelection = New Bunifu.Framework.UI.BunifuDatepicker()
         Me.GridProduit = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.TotalPrix = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fournisseur = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,6 +57,13 @@ Partial Class Caisse
         Me.type = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.montatn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.obs = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dt = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Herue = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Action = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.mantant = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.naturee = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Etata = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Observa = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.GridCaisse, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.GridProduit, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +73,8 @@ Partial Class Caisse
         '
         Me.GridCaisse.AllowUserToAddRows = False
         Me.GridCaisse.AllowUserToDeleteRows = False
+        Me.GridCaisse.AllowUserToResizeColumns = False
+        Me.GridCaisse.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.GridCaisse.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.GridCaisse.BackgroundColor = System.Drawing.Color.White
@@ -73,6 +89,7 @@ Partial Class Caisse
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.GridCaisse.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.GridCaisse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GridCaisse.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dt, Me.Herue, Me.Action, Me.mantant, Me.naturee, Me.Etata, Me.Observa})
         Me.GridCaisse.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridCaisse.DoubleBuffered = True
         Me.GridCaisse.EnableHeadersVisualStyles = False
@@ -107,62 +124,26 @@ Partial Class Caisse
         Me.Panel1.Size = New System.Drawing.Size(969, 129)
         Me.Panel1.TabIndex = 13
         '
-        'dateDeSelection
+        'Initial
         '
-        Me.dateDeSelection.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.dateDeSelection.BorderRadius = 0
-        Me.dateDeSelection.ForeColor = System.Drawing.Color.White
-        Me.dateDeSelection.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.dateDeSelection.FormatCustom = Nothing
-        Me.dateDeSelection.Location = New System.Drawing.Point(227, 18)
-        Me.dateDeSelection.Name = "dateDeSelection"
-        Me.dateDeSelection.Size = New System.Drawing.Size(223, 36)
-        Me.dateDeSelection.TabIndex = 12
-        Me.dateDeSelection.Value = New Date(2018, 7, 26, 14, 5, 52, 840)
+        Me.Initial.AutoSize = True
+        Me.Initial.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Initial.ForeColor = System.Drawing.Color.Firebrick
+        Me.Initial.Location = New System.Drawing.Point(849, 84)
+        Me.Initial.Name = "Initial"
+        Me.Initial.Size = New System.Drawing.Size(42, 30)
+        Me.Initial.TabIndex = 17
+        Me.Initial.Text = "0,0"
         '
-        'BunifuCustomLabel1
+        'BunifuCustomLabel2
         '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(9, 24)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(190, 25)
-        Me.BunifuCustomLabel1.TabIndex = 13
-        Me.BunifuCustomLabel1.Text = "Etat Caisse depuit le :"
-        '
-        'BunifuFlatButton1
-        '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.Firebrick
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Firebrick
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Debiter"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = Nothing
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(730, 18)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Firebrick
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.Firebrick
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(102, 36)
-        Me.BunifuFlatButton1.TabIndex = 14
-        Me.BunifuFlatButton1.Text = "Debiter"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(568, 89)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(126, 25)
+        Me.BunifuCustomLabel2.TabIndex = 16
+        Me.BunifuCustomLabel2.Text = "Initialemant  :"
         '
         'BunifuFlatButton2
         '
@@ -198,44 +179,80 @@ Partial Class Caisse
         Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuCustomLabel2
+        'BunifuFlatButton1
         '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(568, 89)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(126, 25)
-        Me.BunifuCustomLabel2.TabIndex = 16
-        Me.BunifuCustomLabel2.Text = "Initialemant  :"
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.Firebrick
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Firebrick
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton1.BorderRadius = 0
+        Me.BunifuFlatButton1.ButtonText = "Debiter"
+        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.Iconimage = Nothing
+        Me.BunifuFlatButton1.Iconimage_right = Nothing
+        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton1.IconMarginLeft = 0
+        Me.BunifuFlatButton1.IconMarginRight = 0
+        Me.BunifuFlatButton1.IconRightVisible = True
+        Me.BunifuFlatButton1.IconRightZoom = 0R
+        Me.BunifuFlatButton1.IconVisible = True
+        Me.BunifuFlatButton1.IconZoom = 90.0R
+        Me.BunifuFlatButton1.IsTab = False
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(730, 18)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Firebrick
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.Firebrick
+        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.selected = False
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(102, 36)
+        Me.BunifuFlatButton1.TabIndex = 14
+        Me.BunifuFlatButton1.Text = "Debiter"
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'Initial
+        'BunifuCustomLabel1
         '
-        Me.Initial.AutoSize = True
-        Me.Initial.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Initial.ForeColor = System.Drawing.Color.Firebrick
-        Me.Initial.Location = New System.Drawing.Point(849, 84)
-        Me.Initial.Name = "Initial"
-        Me.Initial.Size = New System.Drawing.Size(42, 30)
-        Me.Initial.TabIndex = 17
-        Me.Initial.Text = "0,0"
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(9, 24)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(190, 25)
+        Me.BunifuCustomLabel1.TabIndex = 13
+        Me.BunifuCustomLabel1.Text = "Etat Caisse depuit le :"
+        '
+        'dateDeSelection
+        '
+        Me.dateDeSelection.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.dateDeSelection.BorderRadius = 0
+        Me.dateDeSelection.ForeColor = System.Drawing.Color.White
+        Me.dateDeSelection.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.dateDeSelection.FormatCustom = Nothing
+        Me.dateDeSelection.Location = New System.Drawing.Point(227, 18)
+        Me.dateDeSelection.Name = "dateDeSelection"
+        Me.dateDeSelection.Size = New System.Drawing.Size(223, 36)
+        Me.dateDeSelection.TabIndex = 12
+        Me.dateDeSelection.Value = New Date(2018, 7, 26, 14, 5, 52, 840)
         '
         'GridProduit
         '
         Me.GridProduit.AllowUserToAddRows = False
         Me.GridProduit.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GridProduit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
         Me.GridProduit.BackgroundColor = System.Drawing.Color.White
         Me.GridProduit.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GridProduit.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridProduit.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.GridProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridProduit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridProduit.DoubleBuffered = True
@@ -254,10 +271,10 @@ Partial Class Caisse
         '
         Me.TotalPrix.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.TotalPrix.DataPropertyName = "total"
-        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
-        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle12.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
+        Me.TotalPrix.DefaultCellStyle = DataGridViewCellStyle12
         Me.TotalPrix.DividerWidth = 1
         Me.TotalPrix.HeaderText = "TotalPrix"
         Me.TotalPrix.MinimumWidth = 50
@@ -268,10 +285,10 @@ Partial Class Caisse
         '
         Me.Fournisseur.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Fournisseur.DataPropertyName = "four"
-        DataGridViewCellStyle6.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
-        Me.Fournisseur.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black
+        Me.Fournisseur.DefaultCellStyle = DataGridViewCellStyle13
         Me.Fournisseur.HeaderText = "Fournisseur"
         Me.Fournisseur.Name = "Fournisseur"
         Me.Fournisseur.ReadOnly = True
@@ -280,10 +297,10 @@ Partial Class Caisse
         '
         Me.DateArrivague.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DateArrivague.DataPropertyName = "date"
-        DataGridViewCellStyle7.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        Me.DateArrivague.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle14.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black
+        Me.DateArrivague.DefaultCellStyle = DataGridViewCellStyle14
         Me.DateArrivague.HeaderText = "Date "
         Me.DateArrivague.Name = "DateArrivague"
         Me.DateArrivague.ReadOnly = True
@@ -292,10 +309,10 @@ Partial Class Caisse
         '
         Me.Nombreproduit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Nombreproduit.DataPropertyName = "nombre"
-        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
-        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle15.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        Me.Nombreproduit.DefaultCellStyle = DataGridViewCellStyle15
         Me.Nombreproduit.HeaderText = "Nombre Produit"
         Me.Nombreproduit.Name = "Nombreproduit"
         Me.Nombreproduit.ReadOnly = True
@@ -351,6 +368,71 @@ Partial Class Caisse
         Me.obs.Name = "obs"
         Me.obs.ReadOnly = True
         '
+        'dt
+        '
+        Me.dt.DataPropertyName = "ladate"
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dt.HeaderText = "Date"
+        Me.dt.Name = "dt"
+        Me.dt.ReadOnly = True
+        '
+        'Herue
+        '
+        Me.Herue.DataPropertyName = "heure"
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Herue.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Herue.HeaderText = "Heure"
+        Me.Herue.Name = "Herue"
+        Me.Herue.ReadOnly = True
+        '
+        'Action
+        '
+        Me.Action.DataPropertyName = "type"
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Action.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Action.HeaderText = "Action"
+        Me.Action.Name = "Action"
+        Me.Action.ReadOnly = True
+        '
+        'mantant
+        '
+        Me.mantant.DataPropertyName = "montant"
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.mantant.DefaultCellStyle = DataGridViewCellStyle6
+        Me.mantant.HeaderText = "Montant"
+        Me.mantant.Name = "mantant"
+        Me.mantant.ReadOnly = True
+        '
+        'naturee
+        '
+        Me.naturee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.naturee.DataPropertyName = "nature"
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.naturee.DefaultCellStyle = DataGridViewCellStyle7
+        Me.naturee.HeaderText = "Nature"
+        Me.naturee.Name = "naturee"
+        Me.naturee.ReadOnly = True
+        '
+        'Etata
+        '
+        Me.Etata.DataPropertyName = "etatCaisse"
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Etata.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Etata.HeaderText = "Etat"
+        Me.Etata.Name = "Etata"
+        Me.Etata.ReadOnly = True
+        '
+        'Observa
+        '
+        Me.Observa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Observa.DataPropertyName = "obs"
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Observa.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Observa.HeaderText = "Observation"
+        Me.Observa.Name = "Observa"
+        Me.Observa.ReadOnly = True
+        '
         'Caisse
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -389,4 +471,11 @@ Partial Class Caisse
     Friend WithEvents type As DataGridViewTextBoxColumn
     Friend WithEvents montatn As DataGridViewTextBoxColumn
     Friend WithEvents obs As DataGridViewTextBoxColumn
+    Friend WithEvents dt As DataGridViewTextBoxColumn
+    Friend WithEvents Herue As DataGridViewTextBoxColumn
+    Friend WithEvents Action As DataGridViewTextBoxColumn
+    Friend WithEvents mantant As DataGridViewTextBoxColumn
+    Friend WithEvents naturee As DataGridViewTextBoxColumn
+    Friend WithEvents Etata As DataGridViewTextBoxColumn
+    Friend WithEvents Observa As DataGridViewTextBoxColumn
 End Class

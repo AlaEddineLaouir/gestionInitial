@@ -15,7 +15,7 @@ Public Class Caisse
 
         Try
             cnx.Open()
-            Dim query As String = "select montant,nature,ladate,heure, obs ,etatCaisse,type from Caisse where ladate >='" + dateSelection + "'"
+            Dim query As String = "select montant,nature,ladate,heure, etatCaisse,obs ,type from Caisse where ladate >='" + dateSelection + "'"
             Dim command As New MySqlCommand(query, cnx)
             sda.SelectCommand = command
             sda.Fill(dbDataSet)
@@ -29,7 +29,7 @@ Public Class Caisse
         End Try
 
         Try
-            Initial.Text = GridCaisse.Rows(0).Cells(5).Value
+            Initial.Text = GridCaisse.Rows(0).Cells(4).Value
         Catch ex As Exception
             Initial.Text = "0,0"
         End Try
@@ -42,7 +42,7 @@ Public Class Caisse
     End Sub
 
     Private Sub dateDeSelection_onValueChanged(sender As Object, e As EventArgs) Handles dateDeSelection.onValueChanged
-        refresh()
+        refreshcaisse()
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click

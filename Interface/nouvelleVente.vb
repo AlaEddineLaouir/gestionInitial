@@ -35,6 +35,7 @@ Public Class nouvelleVente
             cd.AutoCompleteMode = AutoCompleteMode.SuggestAppend
             cd.AutoCompleteSource = AutoCompleteSource.CustomSource
             cd.AutoCompleteCustomSource = listCode
+            cnx.Close()
         Catch ex As Exception
 
         End Try
@@ -156,7 +157,10 @@ Public Class nouvelleVente
 
                 Dim insertVente As MySqlCommand = cnx.CreateCommand()
 
-                insertVente.CommandText = "insert into vente (datevente,client,tauxremise) values ('" + dte + "'," + idDeClient.ToString + "," + tauxRemise.ToString + " ) ;
+                Dim remise As String = tauxRemise.ToString()
+                remise = remise.Replace(",", ".")
+
+                insertVente.CommandText = "insert into vente (datevente,client,tauxremise) values ('" + dte + "'," + idDeClient.ToString + "," + remise + " ) ;
                                     SELECT LAST_INSERT_ID() ;"
                 Console.Write(insertVente.CommandText)
                 insertVente.Transaction = sqlTran
@@ -167,7 +171,7 @@ Public Class nouvelleVente
 
                     Dim ajout As MySqlCommand = cnx.CreateCommand()
                     ajout.CommandText = "insert into produitvente values('" + produits(i).code + "' ,
-                                      " + idVente.ToString + "," + produits(i).quantite.ToString + "," + produits(i).prix.ToString + "  );"
+                                      " + idVente.ToString + "," + produits(i).quantite.ToString + ",'" + produits(i).prix.ToString + "'  );"
                     ajout.Transaction = sqlTran
                     ajout.ExecuteNonQuery()
 
@@ -188,16 +192,31 @@ Public Class nouvelleVente
 
 
                 Next
-                Dim crediterCaisse As MySqlCommand = cnx.CreateCommand()
-                crediterCaisse.CommandText = "insert into paiement (datePaiement,montant,vente) values ('" + dte + "'," + totalDeVente + "," + idVente + ")"
 
+                Dim getEtat As MySqlCommand = cnx.CreateCommand()
+                getEtat.Transaction = sqlTran
+                getEtat.CommandText = "select etatCaisse from caisse where id >= All (select id from caisse) "
+                Dim etat As Double = CDbl(getEtat.ExecuteScalar())
+
+                etat = etat + totalDeVente
+                Dim heure As String = DateTime.Now.Hour.ToString()
+                Dim minute As String = DateTime.Now.Minute.ToString()
+                If (minute.Length = 1) Then
+                    minute = "0" + minute
+                End If
+                Dim dateDEnreg As String = DateTime.Today.ToString("yyyy-MM-dd")
+
+                Dim crediterCaisse As MySqlCommand = cnx.CreateCommand()
+                crediterCaisse.Transaction = sqlTran
+                crediterCaisse.CommandText = "insert into caisse (ladate,heure,nature,type,obs,vente,montant,etatcaisse) values ('" + dateDEnreg + "','" + heure + ":" + minute + "','Paiement sur vente :" + dte + "','crediter','" + idClient.Text + "'," + idVente.ToString + "," + totalDeVente.ToString + "," + etat.ToString + " )"
+                crediterCaisse.ExecuteNonQuery()
 
 
 
                 sqlTran.Commit()
                 fermer()
             Catch ex As Exception
-                MessageBox.Show(ex.StackTrace)
+                MessageBox.Show(ex.Message + " Ligne : " + ex.StackTrace)
                 sqlTran.Rollback()
             Finally
                 cnx.Dispose()
@@ -225,8 +244,10 @@ Public Class nouvelleVente
 
                 Catch ex As Exception
                     MessageBox.Show(ex.ToString())
-                    passe1 = False
-                End Try
+                passe1 = False
+                cnx.Close()
+
+            End Try
 
         End If
 
@@ -258,7 +279,8 @@ Public Class nouvelleVente
                 End If
 
 
-            Catch
+            Catch ex As Exception
+                cnx.Close()
             End Try
         End If
     End Sub
@@ -294,12 +316,12 @@ Public Class nouvelleVente
                 idClient.AutoCompleteCustomSource = list
 
 
-                cnx.Close()
+
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
 
             Finally
-
+                cnx.Close()
             End Try
         ElseIf (idClient.Text.Length >= 10) Then
             idClient.ReadOnly = True

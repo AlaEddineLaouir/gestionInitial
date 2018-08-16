@@ -56,4 +56,12 @@
         Caisse1.refreshcaisse()
         Caisse1.BringToFront()
     End Sub
+
+    Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
+        Modele_Inox1.befresh()
+        Modele_Inox1.BringToFront()
+
+    End Sub
+
+
 End Class

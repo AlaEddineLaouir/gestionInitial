@@ -80,6 +80,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajouterModele.Designer.vb">
+      <DependentUpon>ajouterModele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterModele.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ajouterProduit.Designer.vb">
       <DependentUpon>ajouterProduit.vb</DependentUpon>
     </Compile>
@@ -116,11 +122,23 @@
     <Compile Include="detailleApro.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="detailleVente.Designer.vb">
+      <DependentUpon>detailleVente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detailleVente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="encaissement.Designer.vb">
       <DependentUpon>encaissement.vb</DependentUpon>
     </Compile>
     <Compile Include="encaissement.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modele Inox.Designer.vb">
+      <DependentUpon>Modele Inox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modele Inox.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="nouvelleVente.Designer.vb">
       <DependentUpon>nouvelleVente.vb</DependentUpon>
@@ -189,6 +207,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ajouterModele.resx">
+      <DependentUpon>ajouterModele.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ajouterProduit.resx">
       <DependentUpon>ajouterProduit.vb</DependentUpon>
     </EmbeddedResource>
@@ -207,8 +228,14 @@
     <EmbeddedResource Include="detailleApro.resx">
       <DependentUpon>detailleApro.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="detailleVente.resx">
+      <DependentUpon>detailleVente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="encaissement.resx">
       <DependentUpon>encaissement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modele Inox.resx">
+      <DependentUpon>Modele Inox.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nouvelleVente.resx">
       <DependentUpon>nouvelleVente.vb</DependentUpon>
@@ -299,6 +326,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\036-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

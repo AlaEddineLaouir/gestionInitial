@@ -117,47 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="028-cancel-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="036-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\036-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="worker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\worker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="032-check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\032-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cart-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cart-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="028-cancel-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="box-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\box-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="box-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\box-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bag-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bag-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delivery-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delivery-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="028-cancel-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\028-cancel-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="019-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\019-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NvModeleBTN.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAABKCAYAAAD9lxVlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVHhe7d2xS1VRAMfx/o6mmnqTuajLw+XRIi2CkCAo
+        BAZBgYQQ0lA0FEHRIDQIDUUQIkgEEUGIOBgNioPioC7Vok7Pye3G77x7Ljef7/GWnu/8+H7goN57fdP3
+        Hs49b7iXMsAMUcMOUcMOUcMOUcMOUcNOx1Hv7R9k6z9+ZotLy9nL1/MMRtfG+w8fQ3vbO7t5je21jbpe
+        PwkfOlwbyS5fqTAYFz76B6rZw0dPwiTbSsuoV1bXwgfED6v0DWZj45PZ3fsPmu4kBuN/jpnZudDeULVW
+        9Hj12vWwajhPU9SanfUh8Z9vjt7Kvn77np8FLpaWIBNT00Wf+v3w6Dg/29AUdQxad8L8m4X8KNBbNEtr
+        9RAn3tPT0/zMmai15IhBd7ooBy6KZui4RNYyJSqi1rIjXsAMjVSUJ+KNza1wrIj62YtXxVQOpES7IeV2
+        i6jjk6X2A4GUaD2tmVr9akkSotb6WQe0/ABSpK1mNfzp85dG1Nqy04Hbd+6FC4DU6EFRDet5MES98PZd
+        OKC1CZAifZWuhhV3iDpWXt4WAVJSbpioYYGoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeo
+        YYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeoYYeo
+        YYeoYYeoYYeoYYeoYYeoYacpar1QUQceP30eLgBSE98FWkStV9/qwMzsXLgASE2cmIuo9ZJ9HbgxMhou
+        AFKjtzWr4cWl5UbU5bfw//r9J1wEpGSoWgv9bu/sNqKW+BZ+3k+O1Gh2VrsKW4qoNza3wgkNLUeAFGhl
+        UekbDN3qpftSRC1xW6R/oJrV6yf5UaB3jY1PhmYnpqbzI2ei1tpaD4u6aLg2EmZvoBcdHh2HkOMkrL+j
+        f6KWvf2DELQu1tBWCdBLtAUdlxz6ubK6lp9paIpatPTQnnUMW3eC/tbyRIty/WQwujXUnCZXfTlYnnA1
+        U5dn6OjcqCPdAXGrhMHolaHZWd8gttI26kh7f7pTzruLGIxujk6e8zqKGkgJUcMOUcMOUcMOUcNMlv0F
+        Knkxq4ovOlkAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

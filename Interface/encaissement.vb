@@ -68,7 +68,7 @@ Public Class encaissement
                 command.ExecuteNonQuery()
                 Trans.Commit()
                 cnx.Close()
-                Principale.Caisse1.refresh()
+                Principale.Caisse1.refreshcaisse()
             Catch ex As Exception
                 Trans.Rollback()
             Finally

@@ -31,6 +31,8 @@ Partial Class Principale
         Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.SidePanel = New System.Windows.Forms.Panel()
+        Me.BunifuFlatButton10 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton9 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton8 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton6 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -40,12 +42,13 @@ Partial Class Principale
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.Vente1 = New [Interface].Vente()
+        Me.Caisse1 = New [Interface].Caisse()
         Me.Client1 = New [Interface].Client()
         Me.Fournisseur1 = New [Interface].Fournisseur()
         Me.Apro1 = New [Interface].Apro()
         Me.Stock1 = New [Interface].Stock()
-        Me.Caisse1 = New [Interface].Caisse()
-        Me.Vente1 = New [Interface].Vente()
+        Me.Modele_Inox1 = New [Interface].Modele_Inox()
         Me.header.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,6 +134,8 @@ Partial Class Principale
         'SidePanel
         '
         Me.SidePanel.BackColor = System.Drawing.Color.White
+        Me.SidePanel.Controls.Add(Me.BunifuFlatButton10)
+        Me.SidePanel.Controls.Add(Me.BunifuFlatButton9)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton8)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton7)
         Me.SidePanel.Controls.Add(Me.BunifuFlatButton6)
@@ -144,6 +149,74 @@ Partial Class Principale
         Me.SidePanel.Name = "SidePanel"
         Me.SidePanel.Size = New System.Drawing.Size(232, 589)
         Me.SidePanel.TabIndex = 6
+        '
+        'BunifuFlatButton10
+        '
+        Me.BunifuFlatButton10.Activecolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuFlatButton10.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton10.BorderRadius = 0
+        Me.BunifuFlatButton10.ButtonText = "Option Rideau"
+        Me.BunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton10.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton10.Iconimage = Global.[Interface].My.Resources.Resources.bag_5
+        Me.BunifuFlatButton10.Iconimage_right = Nothing
+        Me.BunifuFlatButton10.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton10.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton10.IconMarginLeft = 0
+        Me.BunifuFlatButton10.IconMarginRight = 0
+        Me.BunifuFlatButton10.IconRightVisible = True
+        Me.BunifuFlatButton10.IconRightZoom = 0R
+        Me.BunifuFlatButton10.IconVisible = True
+        Me.BunifuFlatButton10.IconZoom = 50.0R
+        Me.BunifuFlatButton10.IsTab = False
+        Me.BunifuFlatButton10.Location = New System.Drawing.Point(1, 464)
+        Me.BunifuFlatButton10.Name = "BunifuFlatButton10"
+        Me.BunifuFlatButton10.Normalcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton10.OnHovercolor = System.Drawing.Color.White
+        Me.BunifuFlatButton10.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.BunifuFlatButton10.selected = False
+        Me.BunifuFlatButton10.Size = New System.Drawing.Size(229, 48)
+        Me.BunifuFlatButton10.TabIndex = 10
+        Me.BunifuFlatButton10.Text = "Option Rideau"
+        Me.BunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton10.Textcolor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton10.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton9
+        '
+        Me.BunifuFlatButton9.Activecolor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuFlatButton9.BackColor = System.Drawing.Color.White
+        Me.BunifuFlatButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton9.BorderRadius = 0
+        Me.BunifuFlatButton9.ButtonText = "Modele Inox"
+        Me.BunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton9.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton9.Iconimage = Global.[Interface].My.Resources.Resources.bag_5
+        Me.BunifuFlatButton9.Iconimage_right = Nothing
+        Me.BunifuFlatButton9.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton9.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton9.IconMarginLeft = 0
+        Me.BunifuFlatButton9.IconMarginRight = 0
+        Me.BunifuFlatButton9.IconRightVisible = True
+        Me.BunifuFlatButton9.IconRightZoom = 0R
+        Me.BunifuFlatButton9.IconVisible = True
+        Me.BunifuFlatButton9.IconZoom = 50.0R
+        Me.BunifuFlatButton9.IsTab = False
+        Me.BunifuFlatButton9.Location = New System.Drawing.Point(1, 418)
+        Me.BunifuFlatButton9.Name = "BunifuFlatButton9"
+        Me.BunifuFlatButton9.Normalcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton9.OnHovercolor = System.Drawing.Color.White
+        Me.BunifuFlatButton9.OnHoverTextColor = System.Drawing.SystemColors.Highlight
+        Me.BunifuFlatButton9.selected = False
+        Me.BunifuFlatButton9.Size = New System.Drawing.Size(229, 48)
+        Me.BunifuFlatButton9.TabIndex = 9
+        Me.BunifuFlatButton9.Text = "Modele Inox"
+        Me.BunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton9.Textcolor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton9.TextFont = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'BunifuFlatButton8
         '
@@ -424,6 +497,24 @@ Partial Class Principale
         Me.BunifuDragControl2.TargetControl = Me.header
         Me.BunifuDragControl2.Vertical = True
         '
+        'Vente1
+        '
+        Me.Vente1.BackColor = System.Drawing.Color.White
+        Me.Vente1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Vente1.Location = New System.Drawing.Point(232, 43)
+        Me.Vente1.Name = "Vente1"
+        Me.Vente1.Size = New System.Drawing.Size(993, 589)
+        Me.Vente1.TabIndex = 1
+        '
+        'Caisse1
+        '
+        Me.Caisse1.BackColor = System.Drawing.Color.White
+        Me.Caisse1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Caisse1.Location = New System.Drawing.Point(232, 43)
+        Me.Caisse1.Name = "Caisse1"
+        Me.Caisse1.Size = New System.Drawing.Size(993, 589)
+        Me.Caisse1.TabIndex = 2
+        '
         'Client1
         '
         Me.Client1.BackColor = System.Drawing.Color.White
@@ -431,7 +522,7 @@ Partial Class Principale
         Me.Client1.Location = New System.Drawing.Point(232, 43)
         Me.Client1.Name = "Client1"
         Me.Client1.Size = New System.Drawing.Size(993, 589)
-        Me.Client1.TabIndex = 2
+        Me.Client1.TabIndex = 3
         '
         'Fournisseur1
         '
@@ -440,7 +531,7 @@ Partial Class Principale
         Me.Fournisseur1.Location = New System.Drawing.Point(232, 43)
         Me.Fournisseur1.Name = "Fournisseur1"
         Me.Fournisseur1.Size = New System.Drawing.Size(993, 589)
-        Me.Fournisseur1.TabIndex = 3
+        Me.Fournisseur1.TabIndex = 4
         '
         'Apro1
         '
@@ -449,7 +540,7 @@ Partial Class Principale
         Me.Apro1.Location = New System.Drawing.Point(232, 43)
         Me.Apro1.Name = "Apro1"
         Me.Apro1.Size = New System.Drawing.Size(993, 589)
-        Me.Apro1.TabIndex = 4
+        Me.Apro1.TabIndex = 5
         '
         'Stock1
         '
@@ -459,25 +550,17 @@ Partial Class Principale
         Me.Stock1.Location = New System.Drawing.Point(232, 43)
         Me.Stock1.Name = "Stock1"
         Me.Stock1.Size = New System.Drawing.Size(993, 589)
-        Me.Stock1.TabIndex = 5
+        Me.Stock1.TabIndex = 6
         '
-        'Caisse1
+        'Modele_Inox1
         '
-        Me.Caisse1.BackColor = System.Drawing.Color.White
-        Me.Caisse1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Caisse1.Location = New System.Drawing.Point(232, 43)
-        Me.Caisse1.Name = "Caisse1"
-        Me.Caisse1.Size = New System.Drawing.Size(993, 589)
-        Me.Caisse1.TabIndex = 1
-        '
-        'Vente1
-        '
-        Me.Vente1.BackColor = System.Drawing.Color.White
-        Me.Vente1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Vente1.Location = New System.Drawing.Point(232, 43)
-        Me.Vente1.Name = "Vente1"
-        Me.Vente1.Size = New System.Drawing.Size(993, 589)
-        Me.Vente1.TabIndex = 0
+        Me.Modele_Inox1.AutoScroll = True
+        Me.Modele_Inox1.BackColor = System.Drawing.Color.White
+        Me.Modele_Inox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Modele_Inox1.Location = New System.Drawing.Point(232, 43)
+        Me.Modele_Inox1.Name = "Modele_Inox1"
+        Me.Modele_Inox1.Size = New System.Drawing.Size(993, 589)
+        Me.Modele_Inox1.TabIndex = 0
         '
         'Principale
         '
@@ -485,6 +568,7 @@ Partial Class Principale
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1225, 632)
+        Me.Controls.Add(Me.Modele_Inox1)
         Me.Controls.Add(Me.Vente1)
         Me.Controls.Add(Me.Caisse1)
         Me.Controls.Add(Me.Client1)
@@ -526,6 +610,9 @@ Partial Class Principale
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuFlatButton7 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton8 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton10 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton9 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Modele_Inox1 As Object
     Friend WithEvents Caisse1 As Object
     Friend WithEvents Client1 As Object
     Friend WithEvents Apro1 As Object

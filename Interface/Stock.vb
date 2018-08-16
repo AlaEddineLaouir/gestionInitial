@@ -34,6 +34,8 @@ Public Class Stock
 
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
         ajouterProduit.Titre.Text = "Ajouter Produit"
+        ajouterProduit.modifieBTN.Visible = False
+        ajouterProduit.confirmeBTN.Visible = True
         ajouterProduit.Show()
 
     End Sub
