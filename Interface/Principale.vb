@@ -23,7 +23,8 @@
     End Sub
 
     Private Sub BunifuFlatButton3_Click_1(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-
+        Prestation1.befresh()
+        Prestation1.BringToFront()
     End Sub
 
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
@@ -63,5 +64,13 @@
 
     End Sub
 
+    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
+        Rideau1.befresh()
+        Rideau1.BringToFront()
+    End Sub
 
+    Private Sub BunifuFlatButton11_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton11.Click
+        Automatisme1.befresh()
+        Automatisme1.BringToFront()
+    End Sub
 End Class

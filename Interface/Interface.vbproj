@@ -80,10 +80,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajouter Inox Prestation.Designer.vb">
+      <DependentUpon>Ajouter Inox Prestation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter Inox Prestation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter Rideau.Designer.vb">
+      <DependentUpon>Ajouter Rideau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter Rideau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterAutomatisme.Designer.vb">
+      <DependentUpon>ajouterAutomatisme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterAutomatisme.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ajouterModele.Designer.vb">
       <DependentUpon>ajouterModele.vb</DependentUpon>
     </Compile>
     <Compile Include="ajouterModele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterOptionRideau.Designer.vb">
+      <DependentUpon>AjouterOptionRideau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterOptionRideau.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ajouterProduit.Designer.vb">
@@ -96,6 +120,12 @@
       <DependentUpon>Apro.vb</DependentUpon>
     </Compile>
     <Compile Include="Apro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="automatisme.Designer.vb">
+      <DependentUpon>automatisme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="automatisme.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Caisse.Designer.vb">
@@ -140,11 +170,24 @@
     <Compile Include="Modele Inox.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="nouvellePrestation.Designer.vb">
+      <DependentUpon>nouvellePrestation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nouvellePrestation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="nouvelleVente.Designer.vb">
       <DependentUpon>nouvelleVente.vb</DependentUpon>
     </Compile>
     <Compile Include="nouvelleVente.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresInox.vb" />
+    <Compile Include="Prestation.Designer.vb">
+      <DependentUpon>Prestation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestation.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Principale.vb">
       <SubType>Form</SubType>
@@ -188,6 +231,13 @@
     <Compile Include="profil.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Rideau.Designer.vb">
+      <DependentUpon>Rideau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rideau.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RideauBean.vb" />
     <Compile Include="Stock.Designer.vb">
       <DependentUpon>Stock.vb</DependentUpon>
     </Compile>
@@ -207,14 +257,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ajouter Inox Prestation.resx">
+      <DependentUpon>Ajouter Inox Prestation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter Rideau.resx">
+      <DependentUpon>Ajouter Rideau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouterAutomatisme.resx">
+      <DependentUpon>ajouterAutomatisme.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ajouterModele.resx">
       <DependentUpon>ajouterModele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterOptionRideau.resx">
+      <DependentUpon>AjouterOptionRideau.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ajouterProduit.resx">
       <DependentUpon>ajouterProduit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apro.resx">
       <DependentUpon>Apro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="automatisme.resx">
+      <DependentUpon>automatisme.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caisse.resx">
       <DependentUpon>Caisse.vb</DependentUpon>
@@ -237,8 +302,14 @@
     <EmbeddedResource Include="Modele Inox.resx">
       <DependentUpon>Modele Inox.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nouvellePrestation.resx">
+      <DependentUpon>nouvellePrestation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="nouvelleVente.resx">
       <DependentUpon>nouvelleVente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestation.resx">
+      <DependentUpon>Prestation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principale.resx">
       <DependentUpon>Principale.vb</DependentUpon>
@@ -257,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="profil.resx">
       <DependentUpon>profil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rideau.resx">
+      <DependentUpon>Rideau.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>

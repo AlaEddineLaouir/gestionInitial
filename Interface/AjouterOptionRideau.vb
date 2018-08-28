@@ -1,7 +1,18 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.IO
 
-Public Class ajouterModele
+Public Class AjouterOptionRideau
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        fermer()
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+        fermer()
+    End Sub
+    Private Sub fermer()
+        Me.Hide()
+    End Sub
+
     Private Sub selcImage_Click(sender As Object, e As EventArgs) Handles selcImage.Click
         Dim ofd As OpenFileDialog = New OpenFileDialog()
         With ofd
@@ -19,23 +30,12 @@ Public Class ajouterModele
         End If
     End Sub
 
-    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
-        fermer()
-    End Sub
-
-    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
-        fermer()
-    End Sub
-    Private Sub fermer()
-        Me.Hide()
-        prix.Text = ""
-        desc.Text = ""
-
-    End Sub
-
     Private Sub confirmeBTN_Click(sender As Object, e As EventArgs) Handles confirmeBTN.Click
         Dim prixMl As Double
-        Dim description As String
+        Dim nm As String
+        Dim multi As Integer
+        Dim dep As String
+
         Dim ms As New MemoryStream()
         Dim cnx As MySqlConnection = New MySqlConnection
         cnx.ConnectionString = "server=localhost;userid=root;password=admin;database=gestionets"
@@ -50,16 +50,27 @@ Public Class ajouterModele
                 Return
             End Try
 
-            If (Not desc.Equals("")) Then
+            If (Not multipliciter.Equals("")) Then
 
-                description = desc.Text
+                Try
+                    multi = CInt(multipliciter.Text)
+                Catch ex As Exception
+                    MessageBox.Show("Veullier entrer une valeur correct pour la multipliciter Ex : 1 , 2 ..")
+                    Return
+                End Try
+
 
                 If (Not imageModele.Image Is Nothing) Then
 
+                    nm = nom.Text
+                    dep = dependence.Text
+
                     imageModele.Image.Save(ms, imageModele.Image.RawFormat)
-                    Dim enregistrerModele As New MySqlCommand("insert into modeleinox (prix,description,image) values(@p,@ds,@im)", cnx)
+                    Dim enregistrerModele As New MySqlCommand("insert into optionrideau (nom,prix,dependens,multiplicite,image) values(@n,@p,@dp,@ml,@im)", cnx)
                     enregistrerModele.Parameters.Add("@p", MySqlDbType.Double).Value = prixMl
-                    enregistrerModele.Parameters.Add("@ds", MySqlDbType.VarChar).Value = description
+                    enregistrerModele.Parameters.Add("@dp", MySqlDbType.VarChar).Value = dep
+                    enregistrerModele.Parameters.Add("@ml", MySqlDbType.Int16).Value = multi
+                    enregistrerModele.Parameters.Add("@n", MySqlDbType.VarChar).Value = nm
                     enregistrerModele.Parameters.Add("@im", MySqlDbType.LongBlob).Value = ms.ToArray()
 
                     Try
@@ -72,9 +83,9 @@ Public Class ajouterModele
                     Finally
                         cnx.Dispose()
                     End Try
-
+                    fermer()
                 Else
-                    MessageBox.Show("Veullier selectionner une messsage")
+                    MessageBox.Show("Veullier selectionner une Image")
                     Return
                 End If
             Else
@@ -88,27 +99,5 @@ Public Class ajouterModele
         End If
     End Sub
 
-    Private Sub BunifuCustomLabel4_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel4.Click
 
-    End Sub
-
-    Private Sub prix_TextChanged(sender As Object, e As EventArgs) Handles prix.TextChanged
-
-    End Sub
-
-    Private Sub BunifuCustomLabel5_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel5.Click
-
-    End Sub
-
-    Private Sub desc_TextChanged(sender As Object, e As EventArgs) Handles desc.TextChanged
-
-    End Sub
-
-    Private Sub imageModele_Click(sender As Object, e As EventArgs) Handles imageModele.Click
-
-    End Sub
-
-    Private Sub Titre_Click(sender As Object, e As EventArgs) Handles Titre.Click
-
-    End Sub
 End Class
